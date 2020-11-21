@@ -1,0 +1,3288 @@
+.App { /* Base font style */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+  font-size: 15.2px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgba(0, 0, 0, 0.8500);
+  background-color: #f6f6f6;
+}
+
+.App .baseFont * { /* Base font style override for UI framework components */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+  font-size: 15.2px;
+}
+
+.App .appBg {
+  background-color: #f6f6f6;
+}
+
+.App .cardBg {
+  background-color: white;
+}
+
+.App .baseTextBg { /* Base text color as background */
+  background-color: rgba(0, 0, 0, 0.8500);
+}
+
+.App .secondaryTextColor {
+  color: rgba(0, 0, 0, 0.5000);
+}
+
+.App .secondaryTextBg {
+  background-color: rgba(0, 0, 0, 0.5000);
+}
+
+.App .primaryTextColor {
+  color: #bee9ee;
+}
+
+.App .primaryBg {
+  background-color: #bee9ee;
+}
+
+.App .highlightTextColor {
+  color: #0093d5;
+}
+
+.App .highlightBg {
+  background-color: #0093d5;
+}
+
+@media (display-mode: standalone) {
+  .App {
+    user-select: none;
+  }
+}
+
+/* Styles to customize the UI framework plugin (MUI, https://muicss.com) */
+.mui-btn {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.mui-btn--primary {
+    background-color: #bee9ee;
+}
+.mui-btn--primary:active, .mui-btn--primary:focus, .mui-btn--primary:hover {
+    background-color: #c3ebf0;
+}
+.mui-btn--accent {
+    background-color: #0093d5;
+}
+.mui-btn--accent:active, .mui-btn--accent:focus, .mui-btn--accent:hover {
+    background-color: #069fda;
+}
+.mui-textfield {  /* Reset UI framework styling that affects layout */
+    padding-top: 0;
+    margin-bottom: 0;
+}
+.mui-checkbox, .mui-radio {  /* Reset UI framework styling that affects layout */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.mui-select {  /* Reset UI framework styling that affects layout */
+    padding-top: 0;
+    margin-bottom: 0;
+}
+.mui-btn+.mui-btn {  /* Reset UI framework styling that affects layout */
+    margin-left: 0;
+}
+.mui-btn--fab {  /* Reset UI framework styling that breaks compositing */
+    z-index: auto;
+}
+
+@keyframes fadeIn {
+    0%   { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+@keyframes slideIn_right {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
+@keyframes slideIn_bottom {
+    0%   { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+}
+
+/* System font classes */
+
+.App .systemFontRegular {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+}
+.App .systemFontBold {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+  font-weight: 600;
+}
+.App .systemFontItalic {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+  font-style: italic;
+}
+.App .systemFontBoldItalic {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* App-wide text styles specified in React Studio */
+
+.App .actionFont {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+  font-size: 14.2px;
+  font-weight: 400;
+}
+.App .actionFont * {
+  font-size: 14.2px;
+}
+.App .headlineFont {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+  font-size: 19.0px;
+  font-weight: 600;
+}
+.App .headlineFont * {
+  font-size: 19.0px;
+}
+.App .navBar {
+  background-color: #bee9ee;
+  color: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  min-height: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+  font-size: 18px;
+}
+
+.App .navBar a {
+  color: black;
+}
+
+.App .navBar .title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 4px;
+}
+
+.App .navBar .backBtn {
+  position: absolute;
+  padding: 4px;
+  margin-left: 14px;
+  cursor: pointer;
+}
+
+.App .navBar > div {
+  margin-top: 7px;
+}
+
+@media (min-width: 568px) {
+  .App .navBar {
+    height: 50px;
+    min-height: 50px;
+  }
+  .App .navBar > div {
+    margin-top: 7px;
+  }
+}
+@media (min-width: 768px) {
+  .App .navBar {
+    height: 50px;
+    min-height: 50px;
+  }
+  .App .navBar > div {
+    margin-top: 7px;
+  }
+}
+@media (min-width: 1024px) {
+  .App .navBar {
+    height: 50px;
+    min-height: 50px;
+  }
+  .App .navBar > div {
+    margin-top: 7px;
+  }
+}
+@media (min-width: 320px) {
+  .mui-container {
+    max-width: 320px;
+  }
+}
+@media (min-width: 568px) {
+  .mui-container {
+    max-width: 568px;
+  }
+}
+@media (min-width: 768px) {
+  .mui-container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .mui-container {
+    max-width: 1024px;
+  }
+}
+
+.AppScreen {
+  padding-left: 0;
+  padding-right: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+}
+
+.App .background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.App .layoutFlow {
+  position: relative;
+  width: 100%;
+  pointer-events: none;
+}
+.App .layoutFlow:before {  /* Prevent margin collapse */
+  content: "";
+  display: table;
+  clear: both;
+}
+.App .layoutFlow .flowRow {
+  position: relative;
+  width: 100%;
+}
+
+.App .screenFgContainer {
+  /* Items in the foreground group within a screen are placed with fixed positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.App .foreground {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.App ul {
+  margin: 0;
+  padding: 0;
+}
+.App li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+}
+.App .hasNestedComps {
+  position: relative;
+}
+.App .hasNestedComps:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.App .hasNestedComps .background {
+  position: absolute;
+}
+.App .hasNestedComps .layoutFlow {
+  position: relative;
+}
+.App .bottomAlignedContent {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.App .blockInputOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: auto;
+  z-index: 99999999;
+}
+
+.App .marker {
+  width: 0px;
+  height: 0px;
+}
+
+.App .drawer {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.App .drawerOpen {
+  transform: translateX(0%);
+  transition: 0.3s;
+}
+
+.App .drawerClosedLeft {
+  transform: translateX(-100%);
+  transition: 0.3s;
+}
+
+.App .drawerClosedRight {
+  transform: translateX(100%);
+  transition: 0.3s;
+}
+
+.App .drawerContent {
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+}
+
+.App .drawerContent > * {
+  height: 100%;
+}
+
+/* Narrowest size for component's responsive layout */
+  .WordListItem {
+  }
+@media (min-width: 568px) {
+  .WordListItem {
+  }
+}
+@media (min-width: 768px) {
+  .WordListItem {
+  }
+}
+@media (min-width: 1024px) {
+  .WordListItem {
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .WordListItem > .background > .elBackground {
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 0px;
+    width: calc(100.0% - 5px - 5px);
+    height: 100%;
+  }
+@media (min-width: 568px) {
+  .WordListItem > .background > .elBackground {
+    left: 5px;
+    right: 5px;
+    top: 0px;
+    width: calc(100.0% - 5px - 5px);
+    height: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .WordListItem > .background > .elBackground {
+    left: 5px;
+    right: 5px;
+    top: 0px;
+    width: calc(100.0% - 5px - 5px);
+    height: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .WordListItem > .background > .elBackground {
+    left: 5px;
+    right: 5px;
+    top: 0px;
+    width: calc(100.0% - 5px - 5px);
+    height: 100%;
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .WordListItem > .layoutFlow > .flowRow > .elText {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-right: 37.5%;
+    width: calc(62.5% - 10px);
+  }
+  .WordListItem > .layoutFlow > .flowRow > .elText > * { 
+    width: 100%;
+  }
+  
+  .flowRow_WordListItem_elText_1014341 { 
+  }
+  
+@media (min-width: 568px) {
+  .WordListItem > .layoutFlow > .flowRow > .elText {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-right: 37.5%;
+    width: calc(62.5% - 10px);
+  }
+  .WordListItem > .layoutFlow > .flowRow > .elText > * { 
+    width: 100%;
+  }
+  
+  .flowRow_WordListItem_elText_1014341 { 
+  }
+  
+}
+@media (min-width: 768px) {
+  .WordListItem > .layoutFlow > .flowRow > .elText {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-right: 37.7%;
+    width: calc(62.3% - 10px);
+  }
+  .WordListItem > .layoutFlow > .flowRow > .elText > * { 
+    width: 100%;
+  }
+  
+  .flowRow_WordListItem_elText_1014341 { 
+  }
+  
+}
+@media (min-width: 1024px) {
+  .WordListItem > .layoutFlow > .flowRow > .elText {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-right: 37.7%;
+    width: calc(62.3% - 10px);
+  }
+  .WordListItem > .layoutFlow > .flowRow > .elText > * { 
+    width: 100%;
+  }
+  
+  .flowRow_WordListItem_elText_1014341 { 
+  }
+  
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .WordListItem > .layoutFlow > .elRating {
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+  }
+  .WordListItem > .layoutFlow > .elRating > * { 
+  margin-left: auto;
+  width: 120px;
+  margin-right: -5px;
+  height: 44px;
+  }
+  
+@media (min-width: 568px) {
+  .WordListItem > .layoutFlow > .elRating {
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+  }
+  .WordListItem > .layoutFlow > .elRating > * { 
+  margin-left: auto;
+  width: 120px;
+  margin-right: -5px;
+  height: 44px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .WordListItem > .layoutFlow > .elRating {
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+  }
+  .WordListItem > .layoutFlow > .elRating > * { 
+  margin-left: auto;
+  width: 119px;
+  margin-right: -5px;
+  height: 43px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .WordListItem > .layoutFlow > .elRating {
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+  }
+  .WordListItem > .layoutFlow > .elRating > * { 
+  margin-left: auto;
+  width: 119px;
+  margin-right: -5px;
+  height: 43px;
+  }
+  
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .WordListItem > .layoutFlow > .elText2 {
+    position: relative;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 37.5%;
+    width: calc(62.5% - 10px);
+  }
+  .WordListItem > .layoutFlow > .elText2 > * { 
+    width: 100%;
+  }
+  
+@media (min-width: 568px) {
+  .WordListItem > .layoutFlow > .elText2 {
+    position: relative;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 37.5%;
+    width: calc(62.5% - 10px);
+  }
+  .WordListItem > .layoutFlow > .elText2 > * { 
+    width: 100%;
+  }
+  
+}
+@media (min-width: 768px) {
+  .WordListItem > .layoutFlow > .elText2 {
+    position: relative;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 37.7%;
+    width: calc(62.3% - 10px);
+  }
+  .WordListItem > .layoutFlow > .elText2 > * { 
+    width: 100%;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .WordListItem > .layoutFlow > .elText2 {
+    position: relative;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 37.7%;
+    width: calc(62.3% - 10px);
+  }
+  .WordListItem > .layoutFlow > .elText2 > * { 
+    width: 100%;
+  }
+  
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .WordListItem > .layoutFlow > .flowRow > .elText3 {
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 62.5%;
+    margin-right: 10px;
+    width: calc(37.5% - 10px);
+  }
+  .WordListItem > .layoutFlow > .flowRow > .elText3 > * { 
+    width: 100%;
+  }
+  
+  .flowRow_WordListItem_elText3_91978 { 
+  }
+  
+@media (min-width: 568px) {
+  .WordListItem > .layoutFlow > .flowRow > .elText3 {
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 62.5%;
+    margin-right: 10px;
+    width: calc(37.5% - 10px);
+  }
+  .WordListItem > .layoutFlow > .flowRow > .elText3 > * { 
+    width: 100%;
+  }
+  
+  .flowRow_WordListItem_elText3_91978 { 
+  }
+  
+}
+@media (min-width: 768px) {
+  .WordListItem > .layoutFlow > .flowRow > .elText3 {
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 62.3%;
+    margin-right: 10px;
+    width: calc(37.7% - 10px);
+  }
+  .WordListItem > .layoutFlow > .flowRow > .elText3 > * { 
+    width: 100%;
+  }
+  
+  .flowRow_WordListItem_elText3_91978 { 
+  }
+  
+}
+@media (min-width: 1024px) {
+  .WordListItem > .layoutFlow > .flowRow > .elText3 {
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 62.3%;
+    margin-right: 10px;
+    width: calc(37.7% - 10px);
+  }
+  .WordListItem > .layoutFlow > .flowRow > .elText3 > * { 
+    width: 100%;
+  }
+  
+  .flowRow_WordListItem_elText3_91978 { 
+  }
+  
+}
+
+/* This component has a fixed-size layout */
+  .QualifierList {
+    width: 100%; /* This component was designed using a width of 322px */
+    height: 100%;
+  }
+
+
+  .QualifierList > .layoutFlow > .elTextCopy18 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 2.0%;
+    margin-right: 12.4%;
+    width: calc(85.6% - 0px);
+  }
+  .QualifierList > .layoutFlow > .elTextCopy18 > * { 
+    width: 100%;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elText {
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 2.0%;
+    margin-right: 50.0%;
+    width: calc(48.0% - 0px);
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elText > * { 
+    width: 100%;
+  }
+  
+  .flowRow_QualifierList_elText_801408 { 
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elFieldCopy {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 50.0%;
+    margin-right: 9.3%;
+    width: calc(40.7% - 0px);
+  }
+  .QualifierList > .layoutFlow > .elFieldCopy > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elSpacer3 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 40px;
+  }
+  .QualifierList > .layoutFlow > .elSpacer3 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy {
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 2.0%;
+    margin-right: 50.0%;
+    width: calc(48.0% - 0px);
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy > * { 
+    width: 100%;
+  }
+  
+  .flowRow_QualifierList_elTextCopy_52597 { 
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elField {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 50.0%;
+    margin-right: 9.3%;
+    width: calc(40.7% - 0px);
+  }
+  .QualifierList > .layoutFlow > .elField > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elSpacerCopy {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 40px;
+  }
+  .QualifierList > .layoutFlow > .elSpacerCopy > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy2 {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 2.0%;
+    margin-right: 50.0%;
+    width: calc(48.0% - 0px);
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy2 > * { 
+    width: 100%;
+  }
+  
+  .flowRow_QualifierList_elTextCopy2_252438 { 
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elFieldCopy2 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 50.0%;
+    margin-right: 9.3%;
+    width: calc(40.7% - 0px);
+  }
+  .QualifierList > .layoutFlow > .elFieldCopy2 > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elSpacerCopy2 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 40px;
+  }
+  .QualifierList > .layoutFlow > .elSpacerCopy2 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy3 {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 2.0%;
+    margin-right: 50.0%;
+    width: calc(48.0% - 0px);
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy3 > * { 
+    width: 100%;
+  }
+  
+  .flowRow_QualifierList_elTextCopy3_288884 { 
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elFieldCopy3 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 50.0%;
+    margin-right: 9.3%;
+    width: calc(40.7% - 0px);
+  }
+  .QualifierList > .layoutFlow > .elFieldCopy3 > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elSpacerCopy3 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 40px;
+  }
+  .QualifierList > .layoutFlow > .elSpacerCopy3 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy4 {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 2.0%;
+    margin-right: 50.0%;
+    width: calc(48.0% - 0px);
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy4 > * { 
+    width: 100%;
+  }
+  
+  .flowRow_QualifierList_elTextCopy4_418839 { 
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elFieldCopy4 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 50.0%;
+    margin-right: 9.3%;
+    width: calc(40.7% - 0px);
+  }
+  .QualifierList > .layoutFlow > .elFieldCopy4 > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elSpacerCopy4 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 40px;
+  }
+  .QualifierList > .layoutFlow > .elSpacerCopy4 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy5 {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 2.0%;
+    margin-right: 50.0%;
+    width: calc(48.0% - 0px);
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy5 > * { 
+    width: 100%;
+  }
+  
+  .flowRow_QualifierList_elTextCopy5_744557 { 
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elFieldCopy5 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 50.0%;
+    margin-right: 9.3%;
+    width: calc(40.7% - 0px);
+  }
+  .QualifierList > .layoutFlow > .elFieldCopy5 > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elSpacerCopy5 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 40px;
+  }
+  .QualifierList > .layoutFlow > .elSpacerCopy5 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy6 {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 2.0%;
+    margin-right: 50.0%;
+    width: calc(48.0% - 0px);
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy6 > * { 
+    width: 100%;
+  }
+  
+  .flowRow_QualifierList_elTextCopy6_873741 { 
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elFieldCopy6 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 50.0%;
+    margin-right: 9.3%;
+    width: calc(40.7% - 0px);
+  }
+  .QualifierList > .layoutFlow > .elFieldCopy6 > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elSpacerCopy6 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 40px;
+  }
+  .QualifierList > .layoutFlow > .elSpacerCopy6 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy7 {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 2.0%;
+    margin-right: 50.0%;
+    width: calc(48.0% - 0px);
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy7 > * { 
+    width: 100%;
+  }
+  
+  .flowRow_QualifierList_elTextCopy7_485125 { 
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elFieldCopy7 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 50.0%;
+    margin-right: 9.3%;
+    width: calc(40.7% - 0px);
+  }
+  .QualifierList > .layoutFlow > .elFieldCopy7 > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elSpacerCopy7 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 40px;
+  }
+  .QualifierList > .layoutFlow > .elSpacerCopy7 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy8 {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 2.0%;
+    margin-right: 50.0%;
+    width: calc(48.0% - 0px);
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy8 > * { 
+    width: 100%;
+  }
+  
+  .flowRow_QualifierList_elTextCopy8_959482 { 
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elFieldCopy8 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 50.0%;
+    margin-right: 9.3%;
+    width: calc(40.7% - 0px);
+  }
+  .QualifierList > .layoutFlow > .elFieldCopy8 > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elSpacerCopy8 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 40px;
+  }
+  .QualifierList > .layoutFlow > .elSpacerCopy8 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy9 {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 2.0%;
+    margin-right: 50.0%;
+    width: calc(48.0% - 0px);
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy9 > * { 
+    width: 100%;
+  }
+  
+  .flowRow_QualifierList_elTextCopy9_995526 { 
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elFieldCopy9 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 50.0%;
+    margin-right: 9.3%;
+    width: calc(40.7% - 0px);
+  }
+  .QualifierList > .layoutFlow > .elFieldCopy9 > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elSpacerCopy9 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 40px;
+  }
+  .QualifierList > .layoutFlow > .elSpacerCopy9 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy10 {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 2.0%;
+    margin-right: 50.0%;
+    width: calc(48.0% - 0px);
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy10 > * { 
+    width: 100%;
+  }
+  
+  .flowRow_QualifierList_elTextCopy10_398832 { 
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elFieldCopy10 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 50.0%;
+    margin-right: 9.3%;
+    width: calc(40.7% - 0px);
+  }
+  .QualifierList > .layoutFlow > .elFieldCopy10 > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elSpacerCopy10 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 40px;
+  }
+  .QualifierList > .layoutFlow > .elSpacerCopy10 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy11 {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 2.0%;
+    margin-right: 50.0%;
+    width: calc(48.0% - 0px);
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy11 > * { 
+    width: 100%;
+  }
+  
+  .flowRow_QualifierList_elTextCopy11_259967 { 
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elFieldCopy11 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 50.0%;
+    margin-right: 9.3%;
+    width: calc(40.7% - 0px);
+  }
+  .QualifierList > .layoutFlow > .elFieldCopy11 > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elSpacerCopy11 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 40px;
+  }
+  .QualifierList > .layoutFlow > .elSpacerCopy11 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy12 {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 2.0%;
+    margin-right: 50.0%;
+    width: calc(48.0% - 0px);
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy12 > * { 
+    width: 100%;
+  }
+  
+  .flowRow_QualifierList_elTextCopy12_235447 { 
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elFieldCopy12 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 50.0%;
+    margin-right: 9.3%;
+    width: calc(40.7% - 0px);
+  }
+  .QualifierList > .layoutFlow > .elFieldCopy12 > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elSpacerCopy12 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 40px;
+  }
+  .QualifierList > .layoutFlow > .elSpacerCopy12 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy13 {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 2.0%;
+    margin-right: 50.0%;
+    width: calc(48.0% - 0px);
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy13 > * { 
+    width: 100%;
+  }
+  
+  .flowRow_QualifierList_elTextCopy13_846102 { 
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elFieldCopy13 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 50.0%;
+    margin-right: 9.3%;
+    width: calc(40.7% - 0px);
+  }
+  .QualifierList > .layoutFlow > .elFieldCopy13 > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elSpacerCopy13 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 40px;
+  }
+  .QualifierList > .layoutFlow > .elSpacerCopy13 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy19 {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 2.0%;
+    margin-right: 50.0%;
+    width: calc(48.0% - 0px);
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy19 > * { 
+    width: 100%;
+  }
+  
+  .flowRow_QualifierList_elTextCopy19_610471 { 
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elFieldCopy18 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 50.0%;
+    margin-right: 9.3%;
+    width: calc(40.7% - 0px);
+  }
+  .QualifierList > .layoutFlow > .elFieldCopy18 > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elSpacerCopy18 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 40px;
+  }
+  .QualifierList > .layoutFlow > .elSpacerCopy18 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy14 {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 2.0%;
+    margin-right: 50.0%;
+    width: calc(48.0% - 0px);
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy14 > * { 
+    width: 100%;
+  }
+  
+  .flowRow_QualifierList_elTextCopy14_739580 { 
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elFieldCopy14 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 50.0%;
+    margin-right: 9.3%;
+    width: calc(40.7% - 0px);
+  }
+  .QualifierList > .layoutFlow > .elFieldCopy14 > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elSpacerCopy14 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 40px;
+  }
+  .QualifierList > .layoutFlow > .elSpacerCopy14 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy15 {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 2.0%;
+    margin-right: 50.0%;
+    width: calc(48.0% - 0px);
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy15 > * { 
+    width: 100%;
+  }
+  
+  .flowRow_QualifierList_elTextCopy15_792466 { 
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elFieldCopy15 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 50.0%;
+    margin-right: 9.3%;
+    width: calc(40.7% - 0px);
+  }
+  .QualifierList > .layoutFlow > .elFieldCopy15 > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elSpacerCopy15 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 40px;
+  }
+  .QualifierList > .layoutFlow > .elSpacerCopy15 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy16 {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 2.0%;
+    margin-right: 50.0%;
+    width: calc(48.0% - 0px);
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy16 > * { 
+    width: 100%;
+  }
+  
+  .flowRow_QualifierList_elTextCopy16_585003 { 
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elFieldCopy16 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 50.0%;
+    margin-right: 9.3%;
+    width: calc(40.7% - 0px);
+  }
+  .QualifierList > .layoutFlow > .elFieldCopy16 > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elSpacerCopy16 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 40px;
+  }
+  .QualifierList > .layoutFlow > .elSpacerCopy16 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy17 {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 2.0%;
+    margin-right: 50.0%;
+    width: calc(48.0% - 0px);
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elTextCopy17 > * { 
+    width: 100%;
+  }
+  
+  .flowRow_QualifierList_elTextCopy17_422400 { 
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elFieldCopy17 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 50.0%;
+    margin-right: 9.3%;
+    width: calc(40.7% - 0px);
+  }
+  .QualifierList > .layoutFlow > .elFieldCopy17 > * { 
+    width: 100%;
+  height: 34px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elSpacerCopy17 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 40px;
+  }
+  .QualifierList > .layoutFlow > .elSpacerCopy17 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+.QualifierList .elButton button {
+  cursor: pointer;
+  border: 0.0px solid transparent;
+  border-radius: 3.4px;
+}
+
+.QualifierList .elButton button:focus {
+  box-shadow: 0 0 5px rgba(0, 149, 214, 0.5000);
+  outline: none;
+}
+
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elButton {
+    line-height: 35px;
+    position: absolute;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elButton > * { 
+  margin-left: auto;
+  width: 70px;
+  margin-right: 51.6%;
+  height: 35px;
+  }
+  
+  .flowRow_QualifierList_elButton_977203 { 
+  }
+  
+
+.QualifierList .elButtonCopy button {
+  cursor: pointer;
+  border: 0.0px solid transparent;
+  border-radius: 3.4px;
+}
+
+.QualifierList .elButtonCopy button:focus {
+  box-shadow: 0 0 5px rgba(0, 149, 214, 0.5000);
+  outline: none;
+}
+
+
+
+  .QualifierList > .layoutFlow > .elButtonCopy {
+    line-height: 35px;
+    position: relative;
+    margin-top: 20px;
+    width: 70px;
+    margin-left: calc(50.0% + 10px);
+  }
+  .QualifierList > .layoutFlow > .elButtonCopy > * { 
+  width: 70px;
+  height: 35px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elSpacer {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 240px;
+  }
+  .QualifierList > .layoutFlow > .elSpacer > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elLine {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 2.0%;
+    margin-right: 9.3%;
+    width: calc(88.7% - 0px);
+  }
+  .QualifierList > .layoutFlow > .elLine > * { 
+    width: 100%;
+  height: 2px;
+  }
+  
+
+
+  .QualifierList > .layoutFlow > .elSpacer2 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 280px;
+  }
+  .QualifierList > .layoutFlow > .elSpacer2 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+/* This component has a fixed-size layout */
+  .Noresult {
+    min-width: 238px; /* This component has a fixed size */
+  }
+
+
+  .Noresult > .layoutFlow > .state0_elText2752981 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100.0% - 20px);
+  }
+  .Noresult > .layoutFlow > .state0_elText2752981 > * { 
+    width: 100%;
+  }
+  
+
+/* This component has a fixed-size layout */
+  .Noresult {
+    min-width: 238px; /* This component has a fixed size */
+  }
+
+
+  .Noresult > .layoutFlow > .state1_elText2752981 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100.0% - 20px);
+  }
+  .Noresult > .layoutFlow > .state1_elText2752981 > * { 
+    width: 100%;
+  }
+  
+
+/* Narrowest size for component's responsive layout */
+  .LeftMenu {
+  }
+@media (min-width: 568px) {
+  .LeftMenu {
+  }
+}
+@media (min-width: 768px) {
+  .LeftMenu {
+  }
+}
+@media (min-width: 1024px) {
+  .LeftMenu {
+  }
+}
+
+.LeftMenu .state0_elQualifierList929082 {
+  overflow: hidden;
+}
+
+.LeftMenu .state0_elQualifierList929082.hasNestedComps > div {
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+/* Narrowest size for this element's responsive layout */
+  .LeftMenu > .layoutFlow > .state0_elQualifierList929082 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LeftMenu > .layoutFlow > .state0_elQualifierList929082 > * { 
+    width: 100%;
+  }
+  
+@media (min-width: 568px) {
+  .LeftMenu > .layoutFlow > .state0_elQualifierList929082 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LeftMenu > .layoutFlow > .state0_elQualifierList929082 > * { 
+    width: 100%;
+  }
+  
+}
+@media (min-width: 768px) {
+  .LeftMenu > .layoutFlow > .state0_elQualifierList929082 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LeftMenu > .layoutFlow > .state0_elQualifierList929082 > * { 
+    width: 100%;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .LeftMenu > .layoutFlow > .state0_elQualifierList929082 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LeftMenu > .layoutFlow > .state0_elQualifierList929082 > * { 
+    width: 100%;
+  }
+  
+}
+
+.LeftMenu .state0_elIconButton {
+  cursor: pointer;
+  border: 0.0px solid transparent;
+  border-radius: 2.3px;
+}
+
+.LeftMenu .state0_elIconButton:focus {
+  box-shadow: 0 0 5px rgba(0, 149, 214, 0.5000);
+  outline: none;
+}
+
+
+
+/* Narrowest size for this element's responsive layout */
+  .LeftMenu > .foreground > .state0_elIconButton {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 32px;
+    height: 31px;
+  }
+@media (min-width: 568px) {
+  .LeftMenu > .foreground > .state0_elIconButton {
+    right: 5px;
+    bottom: 5px;
+    width: 32px;
+    height: 31px;
+  }
+}
+@media (min-width: 768px) {
+  .LeftMenu > .foreground > .state0_elIconButton {
+    right: 5px;
+    bottom: 5px;
+    width: 32px;
+    height: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .LeftMenu > .foreground > .state0_elIconButton {
+    right: 5px;
+    bottom: 5px;
+    width: 32px;
+    height: 30px;
+  }
+}
+
+/* Narrowest size for component's responsive layout */
+  .LeftMenu {
+  }
+@media (min-width: 568px) {
+  .LeftMenu {
+  }
+}
+@media (min-width: 768px) {
+  .LeftMenu {
+  }
+}
+@media (min-width: 1024px) {
+  .LeftMenu {
+  }
+}
+
+.LeftMenu .state1_elQualifierList929082 {
+  overflow: hidden;
+}
+
+.LeftMenu .state1_elQualifierList929082.hasNestedComps > div {
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+/* Narrowest size for this element's responsive layout */
+  .LeftMenu > .layoutFlow > .state1_elQualifierList929082 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LeftMenu > .layoutFlow > .state1_elQualifierList929082 > * { 
+    width: 100%;
+  }
+  
+@media (min-width: 568px) {
+  .LeftMenu > .layoutFlow > .state1_elQualifierList929082 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LeftMenu > .layoutFlow > .state1_elQualifierList929082 > * { 
+    width: 100%;
+  }
+  
+}
+@media (min-width: 768px) {
+  .LeftMenu > .layoutFlow > .state1_elQualifierList929082 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LeftMenu > .layoutFlow > .state1_elQualifierList929082 > * { 
+    width: 100%;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .LeftMenu > .layoutFlow > .state1_elQualifierList929082 {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .LeftMenu > .layoutFlow > .state1_elQualifierList929082 > * { 
+    width: 100%;
+  }
+  
+}
+
+/* Narrowest size for component's responsive layout */
+  .Arena {
+  }
+@media (min-width: 568px) {
+  .Arena {
+  }
+}
+@media (min-width: 768px) {
+  .Arena {
+  }
+}
+@media (min-width: 1024px) {
+  .Arena {
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state0_elText413992 {
+    position: relative;
+    margin-top: 4px;
+    width: 180px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state0_elText413992 > * { 
+  width: 180px;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state0_elText413992 {
+    position: relative;
+    margin-top: 4px;
+    width: 180px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state0_elText413992 > * { 
+  width: 180px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state0_elText413992 {
+    position: relative;
+    margin-top: 4px;
+    width: 179px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state0_elText413992 > * { 
+  width: 179px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state0_elText413992 {
+    position: relative;
+    margin-top: 4px;
+    width: 179px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state0_elText413992 > * { 
+  width: 179px;
+  }
+  
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state0_elField612324 {
+    position: relative;
+    margin-top: 6px;
+    width: 180px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state0_elField612324 > * { 
+  width: 180px;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state0_elField612324 {
+    position: relative;
+    margin-top: 6px;
+    width: 180px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state0_elField612324 > * { 
+  width: 180px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state0_elField612324 {
+    position: relative;
+    margin-top: 6px;
+    width: 179px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state0_elField612324 > * { 
+  width: 179px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state0_elField612324 {
+    position: relative;
+    margin-top: 6px;
+    width: 179px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state0_elField612324 > * { 
+  width: 179px;
+  }
+  
+}
+
+.Arena .state0_elButton button {
+  cursor: pointer;
+  border: 0.0px solid transparent;
+  border-radius: 3.4px;
+}
+
+.Arena .state0_elButton button:focus {
+  box-shadow: 0 0 5px rgba(0, 149, 214, 0.5000);
+  outline: none;
+}
+
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .flowRow > .state0_elButton {
+    line-height: 35px;
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .Arena > .layoutFlow > .flowRow > .state0_elButton > * { 
+  margin-left: auto;
+  width: 70px;
+  margin-right: 51.2%;
+  height: 35px;
+  }
+  
+  .flowRow_Arena_state0_elButton_747291 { 
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .flowRow > .state0_elButton {
+    line-height: 35px;
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .Arena > .layoutFlow > .flowRow > .state0_elButton > * { 
+  margin-left: auto;
+  width: 70px;
+  margin-right: 45.6%;
+  height: 35px;
+  }
+  
+  .flowRow_Arena_state0_elButton_747291 { 
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .flowRow > .state0_elButton {
+    line-height: 35px;
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .Arena > .layoutFlow > .flowRow > .state0_elButton > * { 
+  margin-left: auto;
+  width: 70px;
+  margin-right: 45.6%;
+  height: 35px;
+  }
+  
+  .flowRow_Arena_state0_elButton_747291 { 
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .flowRow > .state0_elButton {
+    line-height: 35px;
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .Arena > .layoutFlow > .flowRow > .state0_elButton > * { 
+  margin-left: auto;
+  width: 70px;
+  margin-right: 45.6%;
+  height: 35px;
+  }
+  
+  .flowRow_Arena_state0_elButton_747291 { 
+  }
+  
+}
+
+.Arena .state0_elButton2 button {
+  cursor: pointer;
+  border: 0.0px solid transparent;
+  border-radius: 3.4px;
+}
+
+.Arena .state0_elButton2 button:focus {
+  box-shadow: 0 0 5px rgba(0, 149, 214, 0.5000);
+  outline: none;
+}
+
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state0_elButton2 {
+    line-height: 35px;
+    position: relative;
+    margin-top: 10px;
+    width: 70px;
+    margin-left: calc(50.0% + 10px);
+  }
+  .Arena > .layoutFlow > .state0_elButton2 > * { 
+  width: 70px;
+  height: 35px;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state0_elButton2 {
+    line-height: 35px;
+    position: relative;
+    margin-top: 10px;
+    width: 70px;
+    margin-left: calc(50.0% + 10px);
+  }
+  .Arena > .layoutFlow > .state0_elButton2 > * { 
+  width: 70px;
+  height: 35px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state0_elButton2 {
+    line-height: 35px;
+    position: relative;
+    margin-top: 10px;
+    width: 70px;
+    margin-left: calc(50.0% + 10px);
+  }
+  .Arena > .layoutFlow > .state0_elButton2 > * { 
+  width: 70px;
+  height: 35px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state0_elButton2 {
+    line-height: 35px;
+    position: relative;
+    margin-top: 10px;
+    width: 70px;
+    margin-left: calc(50.0% + 10px);
+  }
+  .Arena > .layoutFlow > .state0_elButton2 > * { 
+  width: 70px;
+  height: 35px;
+  }
+  
+}
+
+.circularProgressIndicator {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+.circularProgressIndicator-active {
+    animation: rotate 2s linear infinite;
+    display: inline;
+}
+.circularProgress-animatedPath {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+    animation: circularProgress-dash 1.5s ease-in-out infinite;
+    stroke-linecap: round;
+}
+@keyframes rotate{
+    100%{
+    transform: rotate(360deg);
+    }
+}
+@keyframes circularProgress-dash{
+    0%{
+        stroke-dasharray: 1,200;
+        stroke-dashoffset: 0;
+    }
+    50%{
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -35;
+    }
+    100%{
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -124;
+    }
+}
+
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state0_elProgress476510 {
+    position: relative;
+    margin-top: 10px;
+    width: 48px;
+    margin-left: calc(50.0% - 24px);
+  }
+  .Arena > .layoutFlow > .state0_elProgress476510 > * { 
+  width: 48px;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state0_elProgress476510 {
+    position: relative;
+    margin-top: 10px;
+    width: 48px;
+    margin-left: calc(50.0% - 24px);
+  }
+  .Arena > .layoutFlow > .state0_elProgress476510 > * { 
+  width: 48px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state0_elProgress476510 {
+    position: relative;
+    margin-top: 10px;
+    width: 47px;
+    margin-left: calc(50.0% - 24px);
+  }
+  .Arena > .layoutFlow > .state0_elProgress476510 > * { 
+  width: 47px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state0_elProgress476510 {
+    position: relative;
+    margin-top: 10px;
+    width: 47px;
+    margin-left: calc(50.0% - 24px);
+  }
+  .Arena > .layoutFlow > .state0_elProgress476510 > * { 
+  width: 47px;
+  }
+  
+}
+
+.Arena .state0_elList463682 li {
+  margin-bottom: 20px;
+}
+
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state0_elList463682 {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: calc(100.0% - 12px);
+  }
+  .Arena > .layoutFlow > .state0_elList463682 > * { 
+    width: 100%;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state0_elList463682 {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: calc(100.0% - 12px);
+  }
+  .Arena > .layoutFlow > .state0_elList463682 > * { 
+    width: 100%;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state0_elList463682 {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: calc(100.0% - 12px);
+  }
+  .Arena > .layoutFlow > .state0_elList463682 > * { 
+    width: 100%;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state0_elList463682 {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: calc(100.0% - 12px);
+  }
+  .Arena > .layoutFlow > .state0_elList463682 > * { 
+    width: 100%;
+  }
+  
+}
+
+/* Narrowest size for component's responsive layout */
+  .Arena {
+  }
+@media (min-width: 568px) {
+  .Arena {
+  }
+}
+@media (min-width: 768px) {
+  .Arena {
+  }
+}
+@media (min-width: 1024px) {
+  .Arena {
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state1_elText413992 {
+    position: relative;
+    margin-top: 4px;
+    width: 180px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state1_elText413992 > * { 
+  width: 180px;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state1_elText413992 {
+    position: relative;
+    margin-top: 4px;
+    width: 180px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state1_elText413992 > * { 
+  width: 180px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state1_elText413992 {
+    position: relative;
+    margin-top: 4px;
+    width: 179px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state1_elText413992 > * { 
+  width: 179px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state1_elText413992 {
+    position: relative;
+    margin-top: 4px;
+    width: 179px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state1_elText413992 > * { 
+  width: 179px;
+  }
+  
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state1_elField612324 {
+    position: relative;
+    margin-top: 6px;
+    width: 180px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state1_elField612324 > * { 
+  width: 180px;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state1_elField612324 {
+    position: relative;
+    margin-top: 6px;
+    width: 180px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state1_elField612324 > * { 
+  width: 180px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state1_elField612324 {
+    position: relative;
+    margin-top: 6px;
+    width: 179px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state1_elField612324 > * { 
+  width: 179px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state1_elField612324 {
+    position: relative;
+    margin-top: 6px;
+    width: 179px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state1_elField612324 > * { 
+  width: 179px;
+  }
+  
+}
+
+.Arena .state1_elButton3 button {
+  cursor: pointer;
+  border: 0.0px solid transparent;
+  border-radius: 3.4px;
+}
+
+.Arena .state1_elButton3 button:focus {
+  box-shadow: 0 0 5px rgba(0, 149, 214, 0.5000);
+  outline: none;
+}
+
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state1_elButton3 {
+    line-height: 35px;
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .Arena > .layoutFlow > .state1_elButton3 > * { 
+  margin-left: auto;
+  width: 70px;
+  margin-right: 45.6%;
+  height: 35px;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state1_elButton3 {
+    line-height: 35px;
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .Arena > .layoutFlow > .state1_elButton3 > * { 
+  margin-left: auto;
+  width: 70px;
+  margin-right: 45.6%;
+  height: 35px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state1_elButton3 {
+    line-height: 35px;
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .Arena > .layoutFlow > .state1_elButton3 > * { 
+  margin-left: auto;
+  width: 70px;
+  margin-right: 45.6%;
+  height: 35px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state1_elButton3 {
+    line-height: 35px;
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .Arena > .layoutFlow > .state1_elButton3 > * { 
+  margin-left: auto;
+  width: 70px;
+  margin-right: 45.6%;
+  height: 35px;
+  }
+  
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state1_elProgress476510 {
+    position: relative;
+    margin-top: 10px;
+    width: 48px;
+    margin-left: calc(50.0% - 24px);
+  }
+  .Arena > .layoutFlow > .state1_elProgress476510 > * { 
+  width: 48px;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state1_elProgress476510 {
+    position: relative;
+    margin-top: 10px;
+    width: 48px;
+    margin-left: calc(50.0% - 24px);
+  }
+  .Arena > .layoutFlow > .state1_elProgress476510 > * { 
+  width: 48px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state1_elProgress476510 {
+    position: relative;
+    margin-top: 10px;
+    width: 47px;
+    margin-left: calc(50.0% - 24px);
+  }
+  .Arena > .layoutFlow > .state1_elProgress476510 > * { 
+  width: 47px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state1_elProgress476510 {
+    position: relative;
+    margin-top: 10px;
+    width: 47px;
+    margin-left: calc(50.0% - 24px);
+  }
+  .Arena > .layoutFlow > .state1_elProgress476510 > * { 
+  width: 47px;
+  }
+  
+}
+
+.Arena .state1_elList463682 li {
+  margin-bottom: 20px;
+}
+
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state1_elList463682 {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: calc(100.0% - 12px);
+  }
+  .Arena > .layoutFlow > .state1_elList463682 > * { 
+    width: 100%;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state1_elList463682 {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: calc(100.0% - 12px);
+  }
+  .Arena > .layoutFlow > .state1_elList463682 > * { 
+    width: 100%;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state1_elList463682 {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: calc(100.0% - 12px);
+  }
+  .Arena > .layoutFlow > .state1_elList463682 > * { 
+    width: 100%;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state1_elList463682 {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: calc(100.0% - 12px);
+  }
+  .Arena > .layoutFlow > .state1_elList463682 > * { 
+    width: 100%;
+  }
+  
+}
+
+/* Narrowest size for component's responsive layout */
+  .Arena {
+  }
+@media (min-width: 568px) {
+  .Arena {
+  }
+}
+@media (min-width: 768px) {
+  .Arena {
+  }
+}
+@media (min-width: 1024px) {
+  .Arena {
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state2_elText413992 {
+    position: relative;
+    margin-top: 4px;
+    width: 180px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state2_elText413992 > * { 
+  width: 180px;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state2_elText413992 {
+    position: relative;
+    margin-top: 4px;
+    width: 180px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state2_elText413992 > * { 
+  width: 180px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state2_elText413992 {
+    position: relative;
+    margin-top: 4px;
+    width: 179px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state2_elText413992 > * { 
+  width: 179px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state2_elText413992 {
+    position: relative;
+    margin-top: 4px;
+    width: 179px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state2_elText413992 > * { 
+  width: 179px;
+  }
+  
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state2_elField612324 {
+    position: relative;
+    margin-top: 6px;
+    width: 180px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state2_elField612324 > * { 
+  width: 180px;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state2_elField612324 {
+    position: relative;
+    margin-top: 6px;
+    width: 180px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state2_elField612324 > * { 
+  width: 180px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state2_elField612324 {
+    position: relative;
+    margin-top: 6px;
+    width: 179px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state2_elField612324 > * { 
+  width: 179px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state2_elField612324 {
+    position: relative;
+    margin-top: 6px;
+    width: 179px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state2_elField612324 > * { 
+  width: 179px;
+  }
+  
+}
+
+.Arena .state2_elButton button {
+  cursor: pointer;
+  border: 0.0px solid transparent;
+  border-radius: 3.4px;
+}
+
+.Arena .state2_elButton button:focus {
+  box-shadow: 0 0 5px rgba(0, 149, 214, 0.5000);
+  outline: none;
+}
+
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .flowRow > .state2_elButton {
+    line-height: 35px;
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .Arena > .layoutFlow > .flowRow > .state2_elButton > * { 
+  margin-left: auto;
+  width: 70px;
+  margin-right: 51.2%;
+  height: 35px;
+  }
+  
+  .flowRow_Arena_state2_elButton_797793 { 
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .flowRow > .state2_elButton {
+    line-height: 35px;
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .Arena > .layoutFlow > .flowRow > .state2_elButton > * { 
+  margin-left: auto;
+  width: 70px;
+  margin-right: 45.6%;
+  height: 35px;
+  }
+  
+  .flowRow_Arena_state2_elButton_797793 { 
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .flowRow > .state2_elButton {
+    line-height: 35px;
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .Arena > .layoutFlow > .flowRow > .state2_elButton > * { 
+  margin-left: auto;
+  width: 70px;
+  margin-right: 45.6%;
+  height: 35px;
+  }
+  
+  .flowRow_Arena_state2_elButton_797793 { 
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .flowRow > .state2_elButton {
+    line-height: 35px;
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .Arena > .layoutFlow > .flowRow > .state2_elButton > * { 
+  margin-left: auto;
+  width: 70px;
+  margin-right: 45.6%;
+  height: 35px;
+  }
+  
+  .flowRow_Arena_state2_elButton_797793 { 
+  }
+  
+}
+
+.Arena .state2_elButton2 button {
+  cursor: pointer;
+  border: 0.0px solid transparent;
+  border-radius: 3.4px;
+}
+
+.Arena .state2_elButton2 button:focus {
+  box-shadow: 0 0 5px rgba(0, 149, 214, 0.5000);
+  outline: none;
+}
+
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state2_elButton2 {
+    line-height: 35px;
+    position: relative;
+    margin-top: 10px;
+    width: 70px;
+    margin-left: calc(50.0% + 10px);
+  }
+  .Arena > .layoutFlow > .state2_elButton2 > * { 
+  width: 70px;
+  height: 35px;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state2_elButton2 {
+    line-height: 35px;
+    position: relative;
+    margin-top: 10px;
+    width: 70px;
+    margin-left: calc(50.0% + 10px);
+  }
+  .Arena > .layoutFlow > .state2_elButton2 > * { 
+  width: 70px;
+  height: 35px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state2_elButton2 {
+    line-height: 35px;
+    position: relative;
+    margin-top: 10px;
+    width: 70px;
+    margin-left: calc(50.0% + 10px);
+  }
+  .Arena > .layoutFlow > .state2_elButton2 > * { 
+  width: 70px;
+  height: 35px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state2_elButton2 {
+    line-height: 35px;
+    position: relative;
+    margin-top: 10px;
+    width: 70px;
+    margin-left: calc(50.0% + 10px);
+  }
+  .Arena > .layoutFlow > .state2_elButton2 > * { 
+  width: 70px;
+  height: 35px;
+  }
+  
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state2_elProgress476510 {
+    position: relative;
+    margin-top: 10px;
+    width: 48px;
+    margin-left: calc(50.0% - 24px);
+  }
+  .Arena > .layoutFlow > .state2_elProgress476510 > * { 
+  width: 48px;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state2_elProgress476510 {
+    position: relative;
+    margin-top: 10px;
+    width: 48px;
+    margin-left: calc(50.0% - 24px);
+  }
+  .Arena > .layoutFlow > .state2_elProgress476510 > * { 
+  width: 48px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state2_elProgress476510 {
+    position: relative;
+    margin-top: 10px;
+    width: 47px;
+    margin-left: calc(50.0% - 24px);
+  }
+  .Arena > .layoutFlow > .state2_elProgress476510 > * { 
+  width: 47px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state2_elProgress476510 {
+    position: relative;
+    margin-top: 10px;
+    width: 47px;
+    margin-left: calc(50.0% - 24px);
+  }
+  .Arena > .layoutFlow > .state2_elProgress476510 > * { 
+  width: 47px;
+  }
+  
+}
+
+/* Narrowest size for component's responsive layout */
+  .Arena {
+  }
+@media (min-width: 568px) {
+  .Arena {
+  }
+}
+@media (min-width: 768px) {
+  .Arena {
+  }
+}
+@media (min-width: 1024px) {
+  .Arena {
+  }
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state3_elText413992 {
+    position: relative;
+    margin-top: 4px;
+    width: 180px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state3_elText413992 > * { 
+  width: 180px;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state3_elText413992 {
+    position: relative;
+    margin-top: 4px;
+    width: 180px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state3_elText413992 > * { 
+  width: 180px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state3_elText413992 {
+    position: relative;
+    margin-top: 4px;
+    width: 179px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state3_elText413992 > * { 
+  width: 179px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state3_elText413992 {
+    position: relative;
+    margin-top: 4px;
+    width: 179px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state3_elText413992 > * { 
+  width: 179px;
+  }
+  
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state3_elField612324 {
+    position: relative;
+    margin-top: 6px;
+    width: 180px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state3_elField612324 > * { 
+  width: 180px;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state3_elField612324 {
+    position: relative;
+    margin-top: 6px;
+    width: 180px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state3_elField612324 > * { 
+  width: 180px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state3_elField612324 {
+    position: relative;
+    margin-top: 6px;
+    width: 179px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state3_elField612324 > * { 
+  width: 179px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state3_elField612324 {
+    position: relative;
+    margin-top: 6px;
+    width: 179px;
+    margin-left: calc(50.0% - 90px);
+  }
+  .Arena > .layoutFlow > .state3_elField612324 > * { 
+  width: 179px;
+  }
+  
+}
+
+.Arena .state3_elButton3 button {
+  cursor: pointer;
+  border: 0.0px solid transparent;
+  border-radius: 3.4px;
+}
+
+.Arena .state3_elButton3 button:focus {
+  box-shadow: 0 0 5px rgba(0, 149, 214, 0.5000);
+  outline: none;
+}
+
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state3_elButton3 {
+    line-height: 35px;
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .Arena > .layoutFlow > .state3_elButton3 > * { 
+  margin-left: auto;
+  width: 70px;
+  margin-right: 45.6%;
+  height: 35px;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state3_elButton3 {
+    line-height: 35px;
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .Arena > .layoutFlow > .state3_elButton3 > * { 
+  margin-left: auto;
+  width: 70px;
+  margin-right: 45.6%;
+  height: 35px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state3_elButton3 {
+    line-height: 35px;
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .Arena > .layoutFlow > .state3_elButton3 > * { 
+  margin-left: auto;
+  width: 70px;
+  margin-right: 45.6%;
+  height: 35px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state3_elButton3 {
+    line-height: 35px;
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .Arena > .layoutFlow > .state3_elButton3 > * { 
+  margin-left: auto;
+  width: 70px;
+  margin-right: 45.6%;
+  height: 35px;
+  }
+  
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state3_elProgress476510 {
+    position: relative;
+    margin-top: 10px;
+    width: 48px;
+    margin-left: calc(50.0% - 24px);
+  }
+  .Arena > .layoutFlow > .state3_elProgress476510 > * { 
+  width: 48px;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state3_elProgress476510 {
+    position: relative;
+    margin-top: 10px;
+    width: 48px;
+    margin-left: calc(50.0% - 24px);
+  }
+  .Arena > .layoutFlow > .state3_elProgress476510 > * { 
+  width: 48px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state3_elProgress476510 {
+    position: relative;
+    margin-top: 10px;
+    width: 47px;
+    margin-left: calc(50.0% - 24px);
+  }
+  .Arena > .layoutFlow > .state3_elProgress476510 > * { 
+  width: 47px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state3_elProgress476510 {
+    position: relative;
+    margin-top: 10px;
+    width: 47px;
+    margin-left: calc(50.0% - 24px);
+  }
+  .Arena > .layoutFlow > .state3_elProgress476510 > * { 
+  width: 47px;
+  }
+  
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .StartScreen > .background > .elBackground {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100.0%;
+    height: 100%;
+  }
+@media (min-width: 568px) {
+  .StartScreen > .background > .elBackground {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100.0%;
+    height: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .StartScreen > .background > .elBackground {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100.0%;
+    height: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .StartScreen > .background > .elBackground {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100.0%;
+    height: 100%;
+  }
+}
+
+  .StartScreen > .layoutFlow > .elColumns > div {
+    display: flex;
+    flex-direction: row;
+    height: auto;  /* This element is in scroll flow */
+    flex-wrap: wrap;
+  }
+
+  .StartScreen > .layoutFlow > .elColumns > div > .col0 {
+    flex: 20.0;  /* Base weight for this column */
+    position: relative;
+  }
+
+@media (min-width: 1024px) {
+  .StartScreen > .layoutFlow > .elColumns > div > .col0 {
+    flex: 50.0;  /* Column width for this screen format */
+    flex-basis: 0;  /* Ignore content size so that column widths will determine size */
+    margin-left: 0.0px;
+    margin-top: 0.0px;
+    width: 0px;
+    min-height: auto;
+  }
+
+}
+
+@media (max-width: 1023px) {
+  .StartScreen > .layoutFlow > .elColumns > div > .col0 {
+    flex: 33.0;  /* Column width for this screen format */
+    flex-basis: 0;  /* Ignore content size so that column widths will determine size */
+    margin-left: 0.0px;
+    margin-top: 0.0px;
+    width: 0px;
+    min-height: auto;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .StartScreen > .layoutFlow > .elColumns > div > .col0 {
+    flex: 33.0;  /* Column width for this screen format */
+    flex-basis: 0;  /* Ignore content size so that column widths will determine size */
+    margin-left: 0.0px;
+    margin-top: 0.0px;
+    width: 0px;
+    min-height: auto;
+  }
+
+}
+
+@media (max-width: 567px) {
+  .StartScreen > .layoutFlow > .elColumns > div > .col0 {
+    flex: 20.0;  /* Column width for this screen format */
+    flex-basis: 567px;
+    margin-left: 0.0px;
+    margin-top: 0.0px;
+    width: 0px;
+    min-height: auto;
+  }
+
+}
+
+  .StartScreen > .layoutFlow > .elColumns > div > .col1 {
+    flex: 80.0;  /* Base weight for this column */
+    position: relative;
+  }
+
+@media (min-width: 1024px) {
+  .StartScreen > .layoutFlow > .elColumns > div > .col1 {
+    flex: 50.0;  /* Column width for this screen format */
+    flex-basis: 0;  /* Ignore content size so that column widths will determine size */
+    margin-left: 0.0px;
+    margin-top: 0.0px;
+    width: 0px;
+    min-height: auto;
+  }
+
+}
+
+@media (max-width: 1023px) {
+  .StartScreen > .layoutFlow > .elColumns > div > .col1 {
+    flex: 67.0;  /* Column width for this screen format */
+    flex-basis: 0;  /* Ignore content size so that column widths will determine size */
+    margin-left: 0.0px;
+    margin-top: 0.0px;
+    width: 0px;
+    min-height: auto;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .StartScreen > .layoutFlow > .elColumns > div > .col1 {
+    flex: 67.0;  /* Column width for this screen format */
+    flex-basis: 0;  /* Ignore content size so that column widths will determine size */
+    margin-left: 0.0px;
+    margin-top: 0.0px;
+    width: 0px;
+    min-height: auto;
+  }
+
+}
+
+@media (max-width: 567px) {
+  .StartScreen > .layoutFlow > .elColumns > div > .col1 {
+    flex: 80.0;  /* Column width for this screen format */
+    flex-basis: 567px;
+    margin-left: 0.0px;
+    margin-top: 0.0px;
+    width: 0px;
+    min-height: auto;
+  }
+
+}
+
+
+
+/* Narrowest size for this element's responsive layout */
+  .StartScreen > .layoutFlow > .elColumns {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .StartScreen > .layoutFlow > .elColumns > * { 
+    width: 100%;
+  }
+  
+@media (min-width: 568px) {
+  .StartScreen > .layoutFlow > .elColumns {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .StartScreen > .layoutFlow > .elColumns > * { 
+    width: 100%;
+  }
+  
+}
+@media (min-width: 768px) {
+  .StartScreen > .layoutFlow > .elColumns {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .StartScreen > .layoutFlow > .elColumns > * { 
+    width: 100%;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .StartScreen > .layoutFlow > .elColumns {
+    position: relative;
+    margin-top: -0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
+  }
+  .StartScreen > .layoutFlow > .elColumns > * { 
+    width: 100%;
+  }
+  
+}
+
