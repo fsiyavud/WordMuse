@@ -12,7 +12,6 @@ export default class WordListItem extends Component {
     super(props);
     
     this.state = {
-      elList_visible: false,
       elText3_visible: false,
     };
   }
@@ -27,7 +26,6 @@ export default class WordListItem extends Component {
   }
 
   onClick_elText = (ev) => {
-    this.setState({elList_visible: !this.state.elList_visible});
   
     this.setState({elText3_visible: !this.state.elText3_visible});
   
@@ -118,22 +116,6 @@ export default class WordListItem extends Component {
     const style_elList = {
       height: 'auto',  // This element is in scroll flow
      };
-    const elList = this.state.elList_visible ? (
-      <div className="hasNestedComps elList">
-        <ul style={style_elList}>
-          {items_list.map((row, index) => {
-            let itemComp = (row._componentId)
-                ? listComps_list[row._componentId]
-                : <MeaningListItem appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} ref={(el) => {if (el) this._elList_items.push(el)}} />;
-            return (<li key={row.key}>
-                {itemComp}
-              </li>);
-          })}
-          <div className="marker" ref={(el)=> this._elList_endMarker = el} />
-        </ul>
-      </div>
-      
-     ) : null;
     let transformPropValue_text3 = (input) => {
       // This function modifies the value for property 'text'.
       // There is a variable named 'input' that provides the property value.
@@ -192,7 +174,20 @@ export default class WordListItem extends Component {
             </div>
           </div>
           
-          { elList }
+          <div className="hasNestedComps elList">
+            <div style={style_elList}>
+              {items_list.map((row, index) => {
+                let itemComp = (row._componentId)
+                    ? listComps_list[row._componentId]
+                    : <MeaningListItem appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} ref={(el) => {if (el) this._elList_items.push(el)}} />;
+                return (<div key={row.key}>
+                    {itemComp}
+                  </div>);
+              })}
+              <div className="marker" ref={(el)=> this._elList_endMarker = el} />
+            </div>
+          </div>
+          
           <div className="flowRow flowRow_WordListItem_elText3_91978">
           { elText3 }
           </div>

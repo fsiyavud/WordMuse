@@ -366,9 +366,9 @@
   .MeaningListItem > .layoutFlow > .elText2 {
     position: relative;
     margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    width: calc(100.0% - 0px);
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100.0% - 20px);
   }
   .MeaningListItem > .layoutFlow > .elText2 > * { 
     width: 100%;
@@ -551,69 +551,10 @@
   
 }
 
-.WordListItem > .layoutFlow > .elList > div {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 5px;
-  grid-row-gap: 5px;  /* old name still required by some browsers */
-  column-gap: 5px;
-  grid-column-gap: 5px;  /* old name still required by some browsers */
+.WordListItem .elList li {
+  margin-bottom: 5px;
 }
 
-.WordListItem > .layoutFlow > .elList > div > * {
-  display: inline-block;
-  position: relative;
-  min-width: 191px;
-}
-
-  @media (min-width: 1024px) {
-    .WordListItem > .layoutFlow > .elList > div {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      row-gap: 5px;
-      grid-row-gap: 5px;  /* old name still required by some browsers */
-      column-gap: 5px;
-      grid-column-gap: 5px;  /* old name still required by some browsers */
-    }
-  
-  }
-  
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .WordListItem > .layoutFlow > .elList > div {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      row-gap: 5px;
-      grid-row-gap: 5px;  /* old name still required by some browsers */
-      column-gap: 5px;
-      grid-column-gap: 5px;  /* old name still required by some browsers */
-    }
-  
-  }
-  
-  @media (min-width: 568px) and (max-width: 767px) {
-    .WordListItem > .layoutFlow > .elList > div {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      row-gap: 5px;
-      grid-row-gap: 5px;  /* old name still required by some browsers */
-      column-gap: 5px;
-      grid-column-gap: 5px;  /* old name still required by some browsers */
-    }
-  
-  }
-  
-  @media (max-width: 567px) {
-    .WordListItem > .layoutFlow > .elList > div {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      row-gap: 5px;
-      grid-row-gap: 5px;  /* old name still required by some browsers */
-      column-gap: 5px;
-      grid-column-gap: 5px;  /* old name still required by some browsers */
-    }
-  
-  }
-  
 
 
 /* Narrowest size for this element's responsive layout */

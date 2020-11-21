@@ -1,0 +1,7 @@
+29,30d28
+< 
+<       const value_text2 = this.props.item;
+37c35
+<               <div>{value_text2}</div>
+---
+>               <div><div dangerouslySetInnerHTML={{__html: this.props.locStrings.comp1_text2_424117.replace(/\n/g, '<br>')}}></div></div>
