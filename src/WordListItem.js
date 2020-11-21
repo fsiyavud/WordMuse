@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
 import Rating from 'react-rating';
+import MeaningListItem from './MeaningListItem';
 
 export default class WordListItem extends Component {
 
   // Properties used by this component:
-  // word, defs, tags
+  // word, tags, defs
 
   constructor(props) {
     super(props);
     
     this.state = {
-      elText2_visible: false,
       elText3_visible: false,
     };
   }
@@ -26,7 +26,6 @@ export default class WordListItem extends Component {
   }
 
   onClick_elText = (ev) => {
-    this.setState({elText2_visible: !this.state.elText2_visible});
   
     this.setState({elText3_visible: !this.state.elText3_visible});
   
@@ -82,37 +81,42 @@ export default class WordListItem extends Component {
     const style_elRating = {
       pointerEvents: 'auto',
      };
-    let transformPropValue_text2 = (input) => {
-      // This function modifies the value for property 'text'.
+    let transformPropValue_list = (input) => {
+      // This function modifies the value for property 'itemsArray'.
       // There is a variable named 'input' that provides the property value.
       //
-      //return input;
-      let tags = input;
-      //alert(input);
-      let defs = "";
-      if (tags) {
-        for (let tag of tags) {
-          //alert(tag);
-          defs = defs + tag + "\n";
-        }
+      if (!input || input.length == 0) {
+        return input;
       }
-      return defs;
+      let defs = input;
+      let meaningArray = [];
+      for (let def of defs) {
+        if (!def || !def.trim()) {
+          continue;
+        }
+        let m = {
+          item:""
+        };
+        m.item = def;
+        meaningArray.push(m);
+      }
+      alert(JSON.stringify(meaningArray));
+      return meaningArray;
     }
     
-    const value_text2 = transformPropValue_text2(this.props.defs);
+    // Source items and any special components used for list/grid element 'list'.
+    let items_list = [];
+    let listComps_list = {};
+    if (Array.isArray(transformPropValue_list(this.props.defs))) {
+        items_list = items_list.concat(transformPropValue_list(this.props.defs));
+    } else if (transformPropValue_list(this.props.defs)) {
+        items_list.push(transformPropValue_list(this.props.defs));
+    }
+    this._elList_items = [];
     
-    const style_elText2 = {
-      color: 'rgba(0, 0, 0, 0.8500)',
-      textAlign: 'left',
+    const style_elList = {
+      height: 'auto',  // This element is in scroll flow
      };
-    const elText2 = this.state.elText2_visible ? (
-      <div className="elText2">
-        <div className="actionFont" style={style_elText2}>
-          <div>{value_text2 !== undefined ? value_text2 : (<span className="propValueMissing">{this.props.locStrings.wordlistitem_text2_834320}</span>)}</div>
-        </div>
-      </div>
-      
-     ) : null;
     let transformPropValue_text3 = (input) => {
       // This function modifies the value for property 'text'.
       // There is a variable named 'input' that provides the property value.
@@ -171,7 +175,20 @@ export default class WordListItem extends Component {
             </div>
           </div>
           
-          { elText2 }
+          <div className="hasNestedComps elList">
+            <div style={style_elList}>
+              {items_list.map((row, index) => {
+                let itemComp = (row._componentId)
+                    ? listComps_list[row._componentId]
+                    : <MeaningListItem appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} ref={(el) => {if (el) this._elList_items.push(el)}} />;
+                return (<div key={row.key}>
+                    {itemComp}
+                  </div>);
+              })}
+              <div className="marker" ref={(el)=> this._elList_endMarker = el} />
+            </div>
+          </div>
+          
           <div className="flowRow flowRow_WordListItem_elText3_91978">
           { elText3 }
           </div>

@@ -280,6 +280,11 @@ export default class DataSheet_localizationSheet extends DataSheetBase {
     item['key'] = "comp1_text2_752981";
     item['en'] = "New text. Double-click to edit";
     
+    item = {};
+    this.items.push(item);
+    item['key'] = "comp1_text2_424117";
+    item['en'] = "New text. Double-click to edit";
+    
     let storedItems = localStorage.getItem(this.id);
     if (storedItems != null) {
       this.items = JSON.parse(storedItems);

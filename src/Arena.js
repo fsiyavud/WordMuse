@@ -205,7 +205,7 @@ export default class Arena extends Component {
               {items_list.map((row, index) => {
                 let itemComp = (row._componentId)
                     ? listComps_list[row._componentId]
-                    : <WordListItem appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} dataSheetId={'datamuse3'} dataSheetRow={row} {...{ 'word': row['word'], 'defs': row['defs'], 'tags': row['tags'], }} ref={(el) => {if (el) this._state0_elList463682_items.push(el)}} />;
+                    : <WordListItem appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} dataSheetId={'datamuse3'} dataSheetRow={row} {...{ 'word': row['word'], 'tags': row['tags'], 'defs': row['defs'], }} ref={(el) => {if (el) this._state0_elList463682_items.push(el)}} />;
                 return (<li key={row.key}>
                     {itemComp}
                   </li>);
@@ -369,7 +369,7 @@ export default class Arena extends Component {
               {items_list.map((row, index) => {
                 let itemComp = (row._componentId)
                     ? listComps_list[row._componentId]
-                    : <WordListItem appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} dataSheetId={'datamuse3'} dataSheetRow={row} {...{ 'word': row['word'], 'defs': row['defs'], 'tags': row['tags'], }} ref={(el) => {if (el) this._state1_elList463682_items.push(el)}} />;
+                    : <WordListItem appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} dataSheetId={'datamuse3'} dataSheetRow={row} {...{ 'word': row['word'], 'tags': row['tags'], 'defs': row['defs'], }} ref={(el) => {if (el) this._state1_elList463682_items.push(el)}} />;
                 return (<li key={row.key}>
                     {itemComp}
                   </li>);
