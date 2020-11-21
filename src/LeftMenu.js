@@ -40,7 +40,7 @@ export default class LeftMenu extends Component {
       //
       var scr = String(this.props.deviceInfo.screenFormatId).valueOf().trim();
       if (scr === "narrow-phone") { 
-        if (input == 1) {
+        if (input === "1") {
           return true;
         } else {
           return false;
@@ -95,7 +95,7 @@ export default class LeftMenu extends Component {
       //
       var scr = String(this.props.deviceInfo.screenFormatId).valueOf().trim();
       if (scr === "narrow-phone") { 
-        if (input == 1) {
+        if (input === "1") {
           return true;
         } else {
           return false;
