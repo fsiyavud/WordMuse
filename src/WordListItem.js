@@ -124,7 +124,7 @@ export default class WordListItem extends Component {
           {items_list.map((row, index) => {
             let itemComp = (row._componentId)
                 ? listComps_list[row._componentId]
-                : <MeaningListItem appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} ref={(el) => {if (el) this._elList_items.push(el)}} />;
+                : <MeaningListItem appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} {...{'item': row['item'], }} ref={(el) => {if (el) this._elList_items.push(el)}} />;
             return (<li key={row.key}>
                 {itemComp}
               </li>);

@@ -1,4 +1,4 @@
-183c183
-<                     : <MeaningListItem appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} {...{ 'item': row['item'], }} ref={(el) => {if (el) this._elList_items.push(el)}} />;
+127c127
+<                 : <MeaningListItem appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} {...{'item': row['item'], }} ref={(el) => {if (el) this._elList_items.push(el)}} />;
 ---
->                     : <MeaningListItem appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} ref={(el) => {if (el) this._elList_items.push(el)}} />;
+>                 : <MeaningListItem appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} ref={(el) => {if (el) this._elList_items.push(el)}} />;
