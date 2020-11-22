@@ -501,6 +501,9 @@ export default class QualifierList extends Component {
       textAlign: 'left',
       backgroundColor: 'transparent',
      };
+    const style_state0_elIconButtonCopy731404_outer = {
+      display: 'none',
+     };
     
     const style_state0_elFieldCopy12780023 = {
       display: 'block',
@@ -821,7 +824,7 @@ export default class QualifierList extends Component {
             </div>
           </div>
           
-          <div className="state0_elIconButtonCopy731404">
+          <div className="state0_elIconButtonCopy731404" style={style_state0_elIconButtonCopy731404_outer}>
             <button className="actionFont" style={style_state0_elIconButtonCopy731404} />
           </div>
           
@@ -1397,6 +1400,9 @@ export default class QualifierList extends Component {
       textAlign: 'left',
       backgroundColor: 'transparent',
      };
+    const style_state1_elIconButtonCopy731404_outer = {
+      display: 'none',
+     };
     
     const style_state1_elFieldCopy12780023 = {
       display: 'block',
@@ -1717,7 +1723,7 @@ export default class QualifierList extends Component {
             </div>
           </div>
           
-          <div className="state1_elIconButtonCopy731404">
+          <div className="state1_elIconButtonCopy731404" style={style_state1_elIconButtonCopy731404_outer}>
             <button className="actionFont" style={style_state1_elIconButtonCopy731404} />
           </div>
           
