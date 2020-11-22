@@ -51,6 +51,7 @@ class App extends Component {
     this.dataSlots['ds_topics3'] = "";
     this.dataSlots['ds_topics4'] = "";
     this.dataSlots['ds_topics5'] = "";
+    this.dataSlots['ds_topics_result'] = "test";
 
     this.updateLocalizationFromDataSheet(this.dataSheets['localizationSheet']);
 
@@ -255,6 +256,7 @@ class App extends Component {
         'ds_topics3': this.dataSlots['ds_topics3'],
         'ds_topics4': this.dataSlots['ds_topics4'],
         'ds_topics5': this.dataSlots['ds_topics5'],
+        'ds_topics_result': this.dataSlots['ds_topics_result'],
       };
       switch (screenId) {
         default:

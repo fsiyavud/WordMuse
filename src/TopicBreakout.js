@@ -38,8 +38,20 @@ export default class TopicBreakout extends Component {
     // This function modifies the value for property 'text'.
     // There is a variable named 'input' that provides the property value.
     //
-    return input.split(",",1)[0].trim();
-    //return input;
+    //return input.split(",",1)[0].trim();
+    let str = [];
+    let out = "";
+    if (input) {
+      str = input.split(",",1);
+    }
+    if (str.length > 0) {
+      out = str[0];
+    }
+    if (out) {
+      out = out.trim();
+    }
+    this.props.appActions.updateDataSlot('ds_topics1', out);
+    return out;
   }
   
   
@@ -53,7 +65,20 @@ export default class TopicBreakout extends Component {
     // There is a variable named 'input' that provides the property value.
     //
     //return input.split(",",1)[0].trim();
-    return input.split(",",2)[1].trim();
+    //alert(input);
+    let str = [];
+    let out = "";
+    if (input) {
+      str = input.split(",",2);
+    }
+    if (str.length > 1) {
+      out = str[1];
+    }
+    if (out) {
+      out = out.trim();
+    }
+    this.props.appActions.updateDataSlot('ds_topics2', out);
+    return out;
   }
   
   
@@ -66,7 +91,20 @@ export default class TopicBreakout extends Component {
     // This function modifies the value for property 'text'.
     // There is a variable named 'input' that provides the property value.
     //
-    return input.split(",",3)[2].trim();
+    //let str = input.split(",",3)[2];
+    let str = [];
+    let out = "";
+    if (input) {
+      str = input.split(",",3);
+    }
+    if (str.length > 2) {
+      out = str[2];
+    }
+    if (out) {
+      out = out.trim();
+    }
+    this.props.appActions.updateDataSlot('ds_topics3', out);
+    return out;
   }
   
   
@@ -79,7 +117,20 @@ export default class TopicBreakout extends Component {
     // This function modifies the value for property 'text'.
     // There is a variable named 'input' that provides the property value.
     //
-    return input.split(",",4)[3].trim();
+    //let str = input.split(",",4)[3];
+    let str = [];
+    let out = "";
+    if (input) {
+      str = input.split(",",4);
+    }
+    if (str.length > 3) {
+      out = str[3];
+    }
+    if (out) {
+      out = out.trim();
+    }
+    this.props.appActions.updateDataSlot('ds_topics4', out);
+    return out;
   }
   
   
@@ -92,71 +143,78 @@ export default class TopicBreakout extends Component {
     // This function modifies the value for property 'text'.
     // There is a variable named 'input' that provides the property value.
     //
-    return input.split(",",5)[4].trim();
+    //let str = input.split(",", 5)[4];
+    let str = [];
+    let out = "";
+    if (input) {
+      str = input.split(",",5);
+    }
+    if (str.length > 4) {
+      out = str[4];
+    }
+    if (out) {
+      out = out.trim();
+    }
+    this.props.appActions.updateDataSlot('ds_topics5', out);
+    return out;
   }
   
   
   onClick_elButton = (ev) => {
-    let newVal = "0";
+    let strings = [];
+    if (this.props.appActions.dataSlots &&
+        this.props.appActions.dataSlots['ds_topics1']) {
+      let t = this.props.appActions.dataSlots['ds_topics1'].trim();
+      if (t) {
+        strings.push(t);
+      }
+    }
+    if (this.props.appActions.dataSlots &&
+        this.props.appActions.dataSlots['ds_topics2']) {
+      let t = this.props.appActions.dataSlots['ds_topics2'].trim();
+      //alert("U " + this.props.appActions.dataSlots['ds_topics2'] + "T " + t);
+      if (t) {
+        strings.push(t);
+      }
+    }
+    if (this.props.appActions.dataSlots &&
+        this.props.appActions.dataSlots['ds_topics3']) {
+      let t = this.props.appActions.dataSlots['ds_topics3'].trim();
+      if (t) {
+        strings.push(t);
+      }
+    }
+    if (this.props.appActions.dataSlots &&
+        this.props.appActions.dataSlots['ds_topics4']) {
+      let t = this.props.appActions.dataSlots['ds_topics4'].trim();
+      if (t) {
+        strings.push(t);
+      }
+    }
+    if (this.props.appActions.dataSlots &&
+        this.props.appActions.dataSlots['ds_topics5']) {
+      let t = this.props.appActions.dataSlots['ds_topics5'].trim();
+      if (t) {
+        strings.push(t);
+      }
+    }
+    if (strings.length > 0) {
+      this.props.appActions.updateDataSlot("ds_topics", strings.join(','));
+    }
+  
+    let newVal = "";
     this.props.appActions.updateDataSlot('ds_topic_breakout', newVal);
   
-    newVal = "";
-    
-    transformValue = (input) => {
-      // This function modifies the value written to the target data slot.
-      // There is a variable named 'input' that provides the input value.
-      let strings = [];
-      /*
-      if (input) {
-        let t = input.trim();
-        if (t) {
-          strings.push(t);
-        }
-      }
-      */
-      if (this.props.appActions.dataSlots &&
-          this.props.appActions.dataSlots['ds_topics1']) {
-        let t = this.props.appActions.dataSlots['ds_topics1'].trim();
-        if (t) {
-          strings.push(t);
-        }
-      }
-      if (this.props.appActions.dataSlots &&
-          this.props.appActions.dataSlots['ds_topics2']) {
-        let t = this.props.appActions.dataSlots['ds_topics2'].trim();
-        if (t) {
-          strings.push(t);
-        }
-      }
-      if (this.props.appActions.dataSlots &&
-          this.props.appActions.dataSlots['ds_topics3']) {
-        let t = this.props.appActions.dataSlots['ds_topics3'].trim();
-        if (t) {
-          strings.push(t);
-        }
-      }
-      if (this.props.appActions.dataSlots &&
-          this.props.appActions.dataSlots['ds_topics4']) {
-        let t = this.props.appActions.dataSlots['ds_topics4'].trim();
-        if (t) {
-          strings.push(t);
-        }
-      }
-      if (this.props.appActions.dataSlots &&
-          this.props.appActions.dataSlots['ds_topics5']) {
-        let t = this.props.appActions.dataSlots['ds_topics5'].trim();
-        if (t) {
-          strings.push(t);
-        }
-      }
-      if (strings.length > 0) {
-        return strings.join(',');
-      }
-      return this.props.appActions.dataSlots['ds_topics'];
-      }
-    newVal = transformValue(newVal);
-    
-    this.props.appActions.updateDataSlot('ds_topics', newVal);
+    // Clear internal state for data-providing elements in this component
+    this.setState({
+      text: (<div></div>),
+      text_plainText: "",
+      field: "",
+      fieldCopy: "",
+      fieldCopy3: "",
+      fieldCopy2: "",
+      fieldCopy4: "",
+    });
   
   }
   
