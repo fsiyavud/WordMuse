@@ -4,4 +4,4 @@
 37c35
 <               <div>{value_text2}</div>
 ---
->               <div><div dangerouslySetInnerHTML={{__html: this.props.locStrings.comp1_text2_424117.replace(/\n/g, '<br>')}}></div></div>
+>               <div>{this.props.locStrings.comp1_text2_424117}</div>

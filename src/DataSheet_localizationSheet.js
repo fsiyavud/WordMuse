@@ -285,6 +285,26 @@ export default class DataSheet_localizationSheet extends DataSheetBase {
     item['key'] = "comp1_text2_424117";
     item['en'] = "New text. Double-click to edit";
     
+    item = {};
+    this.items.push(item);
+    item['key'] = "qualifierlist_iconbutton_363158";
+    item['en'] = "New button";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "qualifierlist_iconbuttoncopy_731404";
+    item['en'] = "New button";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "component1_text_364679";
+    item['en'] = "Topics";
+    
+    item = {};
+    this.items.push(item);
+    item['key'] = "component1_button_703167";
+    item['en'] = "OK";
+    
     let storedItems = localStorage.getItem(this.id);
     if (storedItems != null) {
       this.items = JSON.parse(storedItems);

@@ -53,7 +53,7 @@ export default class LeftMenu extends Component {
     const state0_elQualifierList929082 = ((val) => { return val === "true" || val == true || val == 1 })(transformVisiblePropValue_qualifierList((this.props.appActions.dataSlots ? this.props.appActions.dataSlots['ds_leftmenu_driver'] : ''))) ? (
       <div className="hasNestedComps state0_elQualifierList929082">
         <div>
-          <QualifierList ref={(el)=> this._state0_elQualifierList929082 = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+          <QualifierList {...this.props} visualStateIndex={(this.props.appActions.dataSlots ? this.props.appActions.dataSlots['ds_topic_breakout'] : '')} ref={(el)=> this._state0_elQualifierList929082 = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
         </div>
       </div>
       
@@ -108,7 +108,7 @@ export default class LeftMenu extends Component {
     const state1_elQualifierList929082 = ((val) => { return val === "true" || val == true || val == 1 })(transformVisiblePropValue_qualifierList((this.props.appActions.dataSlots ? this.props.appActions.dataSlots['ds_leftmenu_driver'] : ''))) ? (
       <div className="hasNestedComps state1_elQualifierList929082">
         <div>
-          <QualifierList ref={(el)=> this._state1_elQualifierList929082 = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+          <QualifierList {...this.props} visualStateIndex={(this.props.appActions.dataSlots ? this.props.appActions.dataSlots['ds_topic_breakout'] : '')} ref={(el)=> this._state1_elQualifierList929082 = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
         </div>
       </div>
       

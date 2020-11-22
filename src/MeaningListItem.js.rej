@@ -1,0 +1,5 @@
+***************
+*** 35
+-               <div><div dangerouslySetInnerHTML={{__html: this.props.locStrings.comp1_text2_424117.replace(/\n/g, '<br>')}}></div></div>
+--- 37 -----
++               <div>{value_text2}</div>

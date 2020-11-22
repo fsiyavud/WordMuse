@@ -26,13 +26,15 @@ export default class MeaningListItem extends Component {
       color: 'rgba(0, 0, 0, 0.8500)',
       textAlign: 'left',
      };
+
+      const value_text2 = this.props.item;
     
     return (
       <div className="MeaningListItem">
         <div className="layoutFlow">
           <div className="elText2">
             <div className="actionFont" style={style_elText2}>
-              <div>{this.props.locStrings.comp1_text2_424117}</div>
+              <div>{value_text2}</div>
             </div>
           </div>
         </div>
