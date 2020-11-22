@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import LeftMenu from './LeftMenu';
 import Arena from './Arena';
+import TopicBreakout from './TopicBreakout';
 
 export default class StartScreen extends Component {
 
@@ -71,6 +72,11 @@ export default class StartScreen extends Component {
         return 0;
       }
       */
+      /*
+      if (this.props.appActions.dataSlots &&
+            this.props.appActions.dataSlots['ds_arena_hide'] === "1") {
+        return 4;
+      }  */ 
       var scr = String(this.props.deviceInfo.screenFormatId).valueOf().trim();
       if (scr === "narrow-phone") {
         if (!this.props.appActions.dataSlots ||
@@ -88,6 +94,11 @@ export default class StartScreen extends Component {
       
       //return input;
     }
+    const elTopicBreakout = ((val) => { return val === "true" || val == true || val == 1 })((this.props.appActions.dataSlots ? this.props.appActions.dataSlots['ds_topic_breakout'] : '')) ? (
+      <div className="hasNestedComps containerMinHeight elTopicBreakout">
+        <TopicBreakout ref={(el)=> this._elTopicBreakout = el} appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} />
+      </div>
+     ) : null;
     
     return (
       <div className="AppScreen StartScreen" style={baseStyle}>
@@ -110,6 +121,11 @@ export default class StartScreen extends Component {
           </div>
         </div>
         
+        <div className="screenFgContainer">
+          <div className="foreground">
+            { elTopicBreakout }
+          </div>
+        </div>
       </div>
     )
   }

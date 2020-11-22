@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import btn_icon_363158 from './images/btn_icon_363158.png';
+import btn_icon_731404 from './images/btn_icon_731404.png';
 
 // UI framework component imports
 import Button from 'muicss/lib/react/button';
@@ -84,6 +86,13 @@ export default class QualifierList extends Component {
     
     this.props.appActions.updateDataSlot("ds_noun", event.target.value);
   }
+  
+  onClick_elIconButton = (ev) => {
+    let newVal = "1";
+    this.props.appActions.updateDataSlot('ds_topic_breakout', newVal);
+  
+  }
+  
   
   textInputChanged_elFieldCopy7 = (event) => {
     this.setState({fieldCopy7: event.target.value});
@@ -377,6 +386,20 @@ export default class QualifierList extends Component {
       textAlign: 'left',
      };
     
+    const style_elIconButton = {
+      display: 'block',
+      textTransform: 'uppercase',
+      backgroundImage: 'url('+btn_icon_363158+')',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: '102.000%',
+      backgroundPosition: '50% 0%',
+      color: '(null)',
+      textAlign: 'left',
+      backgroundColor: 'transparent',
+      cursor: 'pointer',
+      pointerEvents: 'auto',
+     };
+    
     const style_elFieldCopy7 = {
       display: 'block',
       backgroundColor: 'white',
@@ -440,6 +463,18 @@ export default class QualifierList extends Component {
     const style_elTextCopy12 = {
       color: 'rgba(0, 0, 0, 0.8500)',
       textAlign: 'left',
+     };
+    
+    const style_elIconButtonCopy = {
+      display: 'block',
+      textTransform: 'uppercase',
+      backgroundImage: 'url('+btn_icon_731404+')',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: '102.000%',
+      backgroundPosition: '50% 0%',
+      color: '(null)',
+      textAlign: 'left',
+      backgroundColor: 'transparent',
      };
     
     const style_elFieldCopy12 = {
@@ -677,6 +712,10 @@ export default class QualifierList extends Component {
             </div>
           </div>
           
+          <div className="elIconButton">
+            <button className="actionFont" style={style_elIconButton} onClick={this.onClick_elIconButton}  />
+          </div>
+          
           </div>
           <div className="elFieldCopy7">
             <input className="baseFont" style={style_elFieldCopy7} type="text" placeholder={this.props.locStrings.qualifierlist_fieldcopy7_1022150} onChange={this.textInputChanged_elFieldCopy7} value={this.state.fieldCopy7}  />
@@ -755,6 +794,10 @@ export default class QualifierList extends Component {
             <div className="actionFont" style={style_elTextCopy12}>
               <div>{this.props.locStrings.qualifierlist_textcopy12_235447}</div>
             </div>
+          </div>
+          
+          <div className="elIconButtonCopy">
+            <button className="actionFont" style={style_elIconButtonCopy} />
           </div>
           
           </div>

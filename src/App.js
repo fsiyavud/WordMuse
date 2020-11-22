@@ -45,6 +45,12 @@ class App extends Component {
     this.dataSlots['ds_datamuse_query_params'] = "words?ml=freedom";
     this.dataSlots['ds_arena_init'] = "0";
     this.dataSlots['ds_datamuse_count'] = "0";
+    this.dataSlots['ds_topic_breakout'] = "0";
+    this.dataSlots['ds_topics1'] = "";
+    this.dataSlots['ds_topics2'] = "";
+    this.dataSlots['ds_topics3'] = "";
+    this.dataSlots['ds_topics4'] = "";
+    this.dataSlots['ds_topics5'] = "";
 
     this.updateLocalizationFromDataSheet(this.dataSheets['localizationSheet']);
 
@@ -243,6 +249,12 @@ class App extends Component {
         'ds_datamuse_query_params': this.dataSlots['ds_datamuse_query_params'],
         'ds_arena_init': this.dataSlots['ds_arena_init'],
         'ds_datamuse_count': this.dataSlots['ds_datamuse_count'],
+        'ds_topic_breakout': this.dataSlots['ds_topic_breakout'],
+        'ds_topics1': this.dataSlots['ds_topics1'],
+        'ds_topics2': this.dataSlots['ds_topics2'],
+        'ds_topics3': this.dataSlots['ds_topics3'],
+        'ds_topics4': this.dataSlots['ds_topics4'],
+        'ds_topics5': this.dataSlots['ds_topics5'],
       };
       switch (screenId) {
         default:

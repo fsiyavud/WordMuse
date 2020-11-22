@@ -1010,6 +1010,30 @@
   }
   
 
+.QualifierList .elIconButton button {
+  cursor: pointer;
+  border: 0.0px solid transparent;
+}
+
+.QualifierList .elIconButton button:focus {
+  box-shadow: 0 0 6px rgba(0, 149, 214, 0.2500);
+  outline: none;
+}
+
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elIconButton {
+    position: absolute;
+    top: 4px;
+    width: 25px;
+    margin-left: calc(90.7% + 4px);
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elIconButton > * { 
+  width: 25px;
+  height: 25px;
+  }
+  
+
 
   .QualifierList > .layoutFlow > .elFieldCopy7 {
     position: relative;
@@ -1222,6 +1246,30 @@
   }
   
   .flowRow_QualifierList_elTextCopy12_235447 { 
+  }
+  
+
+.QualifierList .elIconButtonCopy button {
+  cursor: pointer;
+  border: 0.0px solid transparent;
+}
+
+.QualifierList .elIconButtonCopy button:focus {
+  box-shadow: 0 0 6px rgba(0, 149, 214, 0.2500);
+  outline: none;
+}
+
+
+
+  .QualifierList > .layoutFlow > .flowRow > .elIconButtonCopy {
+    position: absolute;
+    top: 4px;
+    width: 25px;
+    margin-left: calc(90.7% + 4px);
+  }
+  .QualifierList > .layoutFlow > .flowRow > .elIconButtonCopy > * { 
+  width: 25px;
+  height: 25px;
   }
   
 
@@ -1672,7 +1720,7 @@
 /* Narrowest size for this element's responsive layout */
   .LeftMenu > .layoutFlow > .state0_elQualifierList929082 {
     position: relative;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-left: 0px;
     margin-right: 0px;
     width: calc(100.0% - 0px);
@@ -1684,7 +1732,7 @@
 @media (min-width: 568px) {
   .LeftMenu > .layoutFlow > .state0_elQualifierList929082 {
     position: relative;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-left: 0px;
     margin-right: 0px;
     width: calc(100.0% - 0px);
@@ -1697,7 +1745,7 @@
 @media (min-width: 768px) {
   .LeftMenu > .layoutFlow > .state0_elQualifierList929082 {
     position: relative;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-left: 0px;
     margin-right: 0px;
     width: calc(100.0% - 0px);
@@ -1710,7 +1758,7 @@
 @media (min-width: 1024px) {
   .LeftMenu > .layoutFlow > .state0_elQualifierList929082 {
     position: relative;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-left: 0px;
     margin-right: 0px;
     width: calc(100.0% - 0px);
@@ -1797,7 +1845,7 @@
 /* Narrowest size for this element's responsive layout */
   .LeftMenu > .layoutFlow > .state1_elQualifierList929082 {
     position: relative;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-left: 0px;
     margin-right: 0px;
     width: calc(100.0% - 0px);
@@ -1809,7 +1857,7 @@
 @media (min-width: 568px) {
   .LeftMenu > .layoutFlow > .state1_elQualifierList929082 {
     position: relative;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-left: 0px;
     margin-right: 0px;
     width: calc(100.0% - 0px);
@@ -1822,7 +1870,7 @@
 @media (min-width: 768px) {
   .LeftMenu > .layoutFlow > .state1_elQualifierList929082 {
     position: relative;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-left: 0px;
     margin-right: 0px;
     width: calc(100.0% - 0px);
@@ -1835,7 +1883,7 @@
 @media (min-width: 1024px) {
   .LeftMenu > .layoutFlow > .state1_elQualifierList929082 {
     position: relative;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-left: 0px;
     margin-right: 0px;
     width: calc(100.0% - 0px);
@@ -1866,7 +1914,7 @@
 /* Narrowest size for this element's responsive layout */
   .Arena > .layoutFlow > .state0_elText413992 {
     position: relative;
-    margin-top: 4px;
+    margin-top: 20px;
     width: 180px;
     margin-left: calc(50.0% - 90px);
   }
@@ -1877,7 +1925,7 @@
 @media (min-width: 568px) {
   .Arena > .layoutFlow > .state0_elText413992 {
     position: relative;
-    margin-top: 4px;
+    margin-top: 20px;
     width: 180px;
     margin-left: calc(50.0% - 90px);
   }
@@ -1889,7 +1937,7 @@
 @media (min-width: 768px) {
   .Arena > .layoutFlow > .state0_elText413992 {
     position: relative;
-    margin-top: 4px;
+    margin-top: 20px;
     width: 179px;
     margin-left: calc(50.0% - 90px);
   }
@@ -1901,7 +1949,7 @@
 @media (min-width: 1024px) {
   .Arena > .layoutFlow > .state0_elText413992 {
     position: relative;
-    margin-top: 4px;
+    margin-top: 20px;
     width: 179px;
     margin-left: calc(50.0% - 90px);
   }
@@ -2278,7 +2326,7 @@
 /* Narrowest size for this element's responsive layout */
   .Arena > .layoutFlow > .state1_elText413992 {
     position: relative;
-    margin-top: 4px;
+    margin-top: 20px;
     width: 180px;
     margin-left: calc(50.0% - 90px);
   }
@@ -2289,7 +2337,7 @@
 @media (min-width: 568px) {
   .Arena > .layoutFlow > .state1_elText413992 {
     position: relative;
-    margin-top: 4px;
+    margin-top: 20px;
     width: 180px;
     margin-left: calc(50.0% - 90px);
   }
@@ -2301,7 +2349,7 @@
 @media (min-width: 768px) {
   .Arena > .layoutFlow > .state1_elText413992 {
     position: relative;
-    margin-top: 4px;
+    margin-top: 20px;
     width: 179px;
     margin-left: calc(50.0% - 90px);
   }
@@ -2313,7 +2361,7 @@
 @media (min-width: 1024px) {
   .Arena > .layoutFlow > .state1_elText413992 {
     position: relative;
-    margin-top: 4px;
+    margin-top: 20px;
     width: 179px;
     margin-left: calc(50.0% - 90px);
   }
@@ -2572,7 +2620,7 @@
 /* Narrowest size for this element's responsive layout */
   .Arena > .layoutFlow > .state2_elText413992 {
     position: relative;
-    margin-top: 4px;
+    margin-top: 20px;
     width: 180px;
     margin-left: calc(50.0% - 90px);
   }
@@ -2583,7 +2631,7 @@
 @media (min-width: 568px) {
   .Arena > .layoutFlow > .state2_elText413992 {
     position: relative;
-    margin-top: 4px;
+    margin-top: 20px;
     width: 180px;
     margin-left: calc(50.0% - 90px);
   }
@@ -2595,7 +2643,7 @@
 @media (min-width: 768px) {
   .Arena > .layoutFlow > .state2_elText413992 {
     position: relative;
-    margin-top: 4px;
+    margin-top: 20px;
     width: 179px;
     margin-left: calc(50.0% - 90px);
   }
@@ -2607,7 +2655,7 @@
 @media (min-width: 1024px) {
   .Arena > .layoutFlow > .state2_elText413992 {
     position: relative;
-    margin-top: 4px;
+    margin-top: 20px;
     width: 179px;
     margin-left: calc(50.0% - 90px);
   }
@@ -2889,7 +2937,7 @@
 /* Narrowest size for this element's responsive layout */
   .Arena > .layoutFlow > .state3_elText413992 {
     position: relative;
-    margin-top: 4px;
+    margin-top: 20px;
     width: 180px;
     margin-left: calc(50.0% - 90px);
   }
@@ -2900,7 +2948,7 @@
 @media (min-width: 568px) {
   .Arena > .layoutFlow > .state3_elText413992 {
     position: relative;
-    margin-top: 4px;
+    margin-top: 20px;
     width: 180px;
     margin-left: calc(50.0% - 90px);
   }
@@ -2912,7 +2960,7 @@
 @media (min-width: 768px) {
   .Arena > .layoutFlow > .state3_elText413992 {
     position: relative;
-    margin-top: 4px;
+    margin-top: 20px;
     width: 179px;
     margin-left: calc(50.0% - 90px);
   }
@@ -2924,7 +2972,7 @@
 @media (min-width: 1024px) {
   .Arena > .layoutFlow > .state3_elText413992 {
     position: relative;
-    margin-top: 4px;
+    margin-top: 20px;
     width: 179px;
     margin-left: calc(50.0% - 90px);
   }
@@ -3104,6 +3152,242 @@
   }
   
 }
+
+/* This component has a fixed-size layout */
+  .TopicBreakout {
+    width: 100%; /* This component was designed using a width of 182px */
+    height: 100%;
+  }
+
+
+  .TopicBreakout > .background > .elBackground {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100.0%;
+    height: 100%;
+  }
+
+
+  .TopicBreakout > .layoutFlow > .elSpacer5 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 280px;
+  }
+  .TopicBreakout > .layoutFlow > .elSpacer5 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .TopicBreakout > .layoutFlow > .elText {
+    position: relative;
+    margin-top: 0px;
+    width: 238px;
+    margin-left: calc(50.0% - 119px);
+  }
+  .TopicBreakout > .layoutFlow > .elText > * { 
+  width: 238px;
+  }
+  
+
+
+  .TopicBreakout > .layoutFlow > .elSpacer {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 100px;
+  }
+  .TopicBreakout > .layoutFlow > .elSpacer > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .TopicBreakout > .layoutFlow > .elField {
+    position: relative;
+    margin-top: 0px;
+    width: 210px;
+    margin-left: calc(50.0% - 105px);
+  }
+  .TopicBreakout > .layoutFlow > .elField > * { 
+  width: 210px;
+  height: 34px;
+  }
+  
+
+
+  .TopicBreakout > .layoutFlow > .elSpacer2 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 100px;
+  }
+  .TopicBreakout > .layoutFlow > .elSpacer2 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .TopicBreakout > .layoutFlow > .elFieldCopy {
+    position: relative;
+    margin-top: 0px;
+    width: 210px;
+    margin-left: calc(50.0% - 105px);
+  }
+  .TopicBreakout > .layoutFlow > .elFieldCopy > * { 
+  width: 210px;
+  height: 34px;
+  }
+  
+
+
+  .TopicBreakout > .layoutFlow > .elSpacerCopy {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 100px;
+  }
+  .TopicBreakout > .layoutFlow > .elSpacerCopy > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .TopicBreakout > .layoutFlow > .elFieldCopy3 {
+    position: relative;
+    margin-top: 0px;
+    width: 210px;
+    margin-left: calc(50.0% - 105px);
+  }
+  .TopicBreakout > .layoutFlow > .elFieldCopy3 > * { 
+  width: 210px;
+  height: 34px;
+  }
+  
+
+
+  .TopicBreakout > .layoutFlow > .elSpacerCopy3 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 100px;
+  }
+  .TopicBreakout > .layoutFlow > .elSpacerCopy3 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .TopicBreakout > .layoutFlow > .elFieldCopy2 {
+    position: relative;
+    margin-top: 0px;
+    width: 210px;
+    margin-left: calc(50.0% - 105px);
+  }
+  .TopicBreakout > .layoutFlow > .elFieldCopy2 > * { 
+  width: 210px;
+  height: 34px;
+  }
+  
+
+
+  .TopicBreakout > .layoutFlow > .elSpacerCopy2 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 100px;
+  }
+  .TopicBreakout > .layoutFlow > .elSpacerCopy2 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .TopicBreakout > .layoutFlow > .elFieldCopy4 {
+    position: relative;
+    margin-top: 0px;
+    width: 210px;
+    margin-left: calc(50.0% - 105px);
+  }
+  .TopicBreakout > .layoutFlow > .elFieldCopy4 > * { 
+  width: 210px;
+  height: 34px;
+  }
+  
+
+
+  .TopicBreakout > .layoutFlow > .elSpacerCopy4 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 100px;
+  }
+  .TopicBreakout > .layoutFlow > .elSpacerCopy4 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+
+  .TopicBreakout > .layoutFlow > .elSpacer3 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 160px;
+  }
+  .TopicBreakout > .layoutFlow > .elSpacer3 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+
+.TopicBreakout .elButton button {
+  cursor: pointer;
+  border: 0.0px solid transparent;
+  border-radius: 3.4px;
+}
+
+.TopicBreakout .elButton button:focus {
+  box-shadow: 0 0 5px rgba(0, 149, 214, 0.5000);
+  outline: none;
+}
+
+
+
+  .TopicBreakout > .layoutFlow > .elButton {
+    line-height: 35px;
+    position: relative;
+    margin-top: 0px;
+    width: 70px;
+    margin-left: calc(50.0% - 35px);
+  }
+  .TopicBreakout > .layoutFlow > .elButton > * { 
+  width: 70px;
+  height: 35px;
+  }
+  
+
+
+  .TopicBreakout > .layoutFlow > .elSpacer4 {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 100px;
+  }
+  .TopicBreakout > .layoutFlow > .elSpacer4 > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
 
 
 /* Narrowest size for this element's responsive layout */
@@ -3308,5 +3592,77 @@
     width: 100%;
   }
   
+}
+
+.StartScreen .elTopicBreakout {
+  overflow: hidden;
+  pointer-events: auto;
+}
+
+.StartScreen .elTopicBreakout.hasNestedComps > div {
+  overflow: hidden;
+  position: relative;
+}
+
+
+@keyframes fadeIn_StartScreen_elTopicBreakout {
+  from { opacity: 0.0; }
+  to   { opacity: 1.0; }
+}
+.StartScreen > .screenFgContainer > .foreground > .elTopicBreakout {
+  animation: 1.00s fadeIn_StartScreen_elTopicBreakout;
+}
+
+/* Narrowest size for this element's responsive layout */
+  .StartScreen > .screenFgContainer > .foreground > .elTopicBreakout {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100.0%;
+    height: 100%;
+  }
+  .StartScreen > .screenFgContainer > .foreground > .elTopicBreakout > .background > .containerMinHeight {
+    min-height: 315px;
+  }
+
+@media (min-width: 568px) {
+  .StartScreen > .screenFgContainer > .foreground > .elTopicBreakout {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100.0%;
+    height: 100%;
+  }
+  .StartScreen > .screenFgContainer > .foreground > .elTopicBreakout > .background > .containerMinHeight {
+    min-height: 315px;
+  }
+
+}
+@media (min-width: 768px) {
+  .StartScreen > .screenFgContainer > .foreground > .elTopicBreakout {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100.0%;
+    height: 100%;
+  }
+  .StartScreen > .screenFgContainer > .foreground > .elTopicBreakout > .background > .containerMinHeight {
+    min-height: 313px;
+  }
+
+}
+@media (min-width: 1024px) {
+  .StartScreen > .screenFgContainer > .foreground > .elTopicBreakout {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100.0%;
+    height: 100%;
+  }
+  .StartScreen > .screenFgContainer > .foreground > .elTopicBreakout > .background > .containerMinHeight {
+    min-height: 313px;
+  }
+
 }
 
