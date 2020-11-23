@@ -160,6 +160,9 @@ export default class Arena extends Component {
       color: 'rgba(0, 0, 0, 0.8500)',
       textAlign: 'left',
      };
+    const style_state0_elText2930461_outer = {
+      display: 'none',
+     };
     
     // Source items and any special components used for list/grid element 'list'.
     let items_list = [];
@@ -220,7 +223,7 @@ export default class Arena extends Component {
             </div>
           </div>
           
-          <div className="state0_elText2930461">
+          <div className="state0_elText2930461" style={style_state0_elText2930461_outer}>
             <div className="baseFont" style={style_state0_elText2930461}>
               <div>{value_text2 !== undefined ? value_text2 : (<span className="propValueMissing">{this.props.locStrings.arena_text2_930461}</span>)}</div>
             </div>
@@ -358,6 +361,9 @@ export default class Arena extends Component {
       color: 'rgba(0, 0, 0, 0.8500)',
       textAlign: 'left',
      };
+    const style_state1_elText2930461_outer = {
+      display: 'none',
+     };
     
     // Source items and any special components used for list/grid element 'list'.
     let items_list = [];
@@ -410,7 +416,7 @@ export default class Arena extends Component {
             </div>
           </div>
           
-          <div className="state1_elText2930461">
+          <div className="state1_elText2930461" style={style_state1_elText2930461_outer}>
             <div className="baseFont" style={style_state1_elText2930461}>
               <div>{value_text2 !== undefined ? value_text2 : (<span className="propValueMissing">{this.props.locStrings.arena_text2_930461}</span>)}</div>
             </div>
@@ -563,6 +569,9 @@ export default class Arena extends Component {
       color: 'rgba(0, 0, 0, 0.8500)',
       textAlign: 'left',
      };
+    const style_state2_elText2930461_outer = {
+      display: 'none',
+     };
     
     return (
       <div className="Arena appBg">
@@ -599,7 +608,7 @@ export default class Arena extends Component {
             </div>
           </div>
           
-          <div className="state2_elText2930461">
+          <div className="state2_elText2930461" style={style_state2_elText2930461_outer}>
             <div className="baseFont" style={style_state2_elText2930461}>
               <div>{value_text2 !== undefined ? value_text2 : (<span className="propValueMissing">{this.props.locStrings.arena_text2_930461}</span>)}</div>
             </div>
@@ -723,6 +732,9 @@ export default class Arena extends Component {
       color: 'rgba(0, 0, 0, 0.8500)',
       textAlign: 'left',
      };
+    const style_state3_elText2930461_outer = {
+      display: 'none',
+     };
     
     return (
       <div className="Arena appBg">
@@ -751,7 +763,7 @@ export default class Arena extends Component {
             </div>
           </div>
           
-          <div className="state3_elText2930461">
+          <div className="state3_elText2930461" style={style_state3_elText2930461_outer}>
             <div className="baseFont" style={style_state3_elText2930461}>
               <div>{value_text2 !== undefined ? value_text2 : (<span className="propValueMissing">{this.props.locStrings.arena_text2_930461}</span>)}</div>
             </div>
