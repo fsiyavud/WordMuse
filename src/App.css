@@ -503,8 +503,8 @@
   }
   .WordListItem > .layoutFlow > .elRating > * { 
   margin-left: auto;
-  width: 120px;
-  margin-right: -5px;
+  width: 110px;
+  margin-right: 10px;
   height: 44px;
   }
   
@@ -516,8 +516,8 @@
   }
   .WordListItem > .layoutFlow > .elRating > * { 
   margin-left: auto;
-  width: 120px;
-  margin-right: -5px;
+  width: 110px;
+  margin-right: 10px;
   height: 44px;
   }
   
@@ -530,8 +530,8 @@
   }
   .WordListItem > .layoutFlow > .elRating > * { 
   margin-left: auto;
-  width: 119px;
-  margin-right: -5px;
+  width: 109px;
+  margin-right: 10px;
   height: 43px;
   }
   
@@ -544,9 +544,115 @@
   }
   .WordListItem > .layoutFlow > .elRating > * { 
   margin-left: auto;
-  width: 119px;
-  margin-right: -5px;
+  width: 109px;
+  margin-right: 10px;
   height: 43px;
+  }
+  
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .WordListItem > .layoutFlow > .elText3 {
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+  }
+  .WordListItem > .layoutFlow > .elText3 > * { 
+  margin-left: auto;
+  width: 110px;
+  margin-right: 10px;
+  }
+  
+@media (min-width: 568px) {
+  .WordListItem > .layoutFlow > .elText3 {
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+  }
+  .WordListItem > .layoutFlow > .elText3 > * { 
+  margin-left: auto;
+  width: 110px;
+  margin-right: 10px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .WordListItem > .layoutFlow > .elText3 {
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+  }
+  .WordListItem > .layoutFlow > .elText3 > * { 
+  margin-left: auto;
+  width: 109px;
+  margin-right: 10px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .WordListItem > .layoutFlow > .elText3 {
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+  }
+  .WordListItem > .layoutFlow > .elText3 > * { 
+  margin-left: auto;
+  width: 109px;
+  margin-right: 10px;
+  }
+  
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .WordListItem > .layoutFlow > .elSpacer {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 270px;
+  }
+  .WordListItem > .layoutFlow > .elSpacer > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+@media (min-width: 568px) {
+  .WordListItem > .layoutFlow > .elSpacer {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 270px;
+  }
+  .WordListItem > .layoutFlow > .elSpacer > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .WordListItem > .layoutFlow > .elSpacer {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 268px;
+  }
+  .WordListItem > .layoutFlow > .elSpacer > * { 
+  width: 10px;
+  height: 10px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .WordListItem > .layoutFlow > .elSpacer {
+    position: relative;
+    margin-top: 0px;
+    width: 10px;
+    margin-left: 268px;
+  }
+  .WordListItem > .layoutFlow > .elSpacer > * { 
+  width: 10px;
+  height: 10px;
   }
   
 }
@@ -562,8 +668,8 @@
     position: relative;
     margin-top: 5px;
     margin-left: 0px;
-    margin-right: 37.5%;
-    width: calc(62.5% - 0px);
+    margin-right: 10px;
+    width: calc(100.0% - 10px);
   }
   .WordListItem > .layoutFlow > .elList > * { 
     width: 100%;
@@ -574,8 +680,8 @@
     position: relative;
     margin-top: 5px;
     margin-left: 0px;
-    margin-right: 37.5%;
-    width: calc(62.5% - 0px);
+    margin-right: 10px;
+    width: calc(100.0% - 10px);
   }
   .WordListItem > .layoutFlow > .elList > * { 
     width: 100%;
@@ -587,8 +693,8 @@
     position: relative;
     margin-top: 5px;
     margin-left: 0px;
-    margin-right: 37.7%;
-    width: calc(62.3% - 0px);
+    margin-right: 10px;
+    width: calc(100.0% - 10px);
   }
   .WordListItem > .layoutFlow > .elList > * { 
     width: 100%;
@@ -600,76 +706,11 @@
     position: relative;
     margin-top: 5px;
     margin-left: 0px;
-    margin-right: 37.7%;
-    width: calc(62.3% - 0px);
+    margin-right: 10px;
+    width: calc(100.0% - 10px);
   }
   .WordListItem > .layoutFlow > .elList > * { 
     width: 100%;
-  }
-  
-}
-
-
-/* Narrowest size for this element's responsive layout */
-  .WordListItem > .layoutFlow > .flowRow > .elText3 {
-    position: absolute;
-    margin-top: -40px;
-    margin-left: 62.5%;
-    margin-right: 10px;
-    width: calc(37.5% - 10px);
-  }
-  .WordListItem > .layoutFlow > .flowRow > .elText3 > * { 
-    width: 100%;
-  }
-  
-  .flowRow_WordListItem_elText3_91978 { 
-  }
-  
-@media (min-width: 568px) {
-  .WordListItem > .layoutFlow > .flowRow > .elText3 {
-    position: absolute;
-    margin-top: -40px;
-    margin-left: 62.5%;
-    margin-right: 10px;
-    width: calc(37.5% - 10px);
-  }
-  .WordListItem > .layoutFlow > .flowRow > .elText3 > * { 
-    width: 100%;
-  }
-  
-  .flowRow_WordListItem_elText3_91978 { 
-  }
-  
-}
-@media (min-width: 768px) {
-  .WordListItem > .layoutFlow > .flowRow > .elText3 {
-    position: absolute;
-    margin-top: -40px;
-    margin-left: 62.3%;
-    margin-right: 10px;
-    width: calc(37.7% - 10px);
-  }
-  .WordListItem > .layoutFlow > .flowRow > .elText3 > * { 
-    width: 100%;
-  }
-  
-  .flowRow_WordListItem_elText3_91978 { 
-  }
-  
-}
-@media (min-width: 1024px) {
-  .WordListItem > .layoutFlow > .flowRow > .elText3 {
-    position: absolute;
-    margin-top: -40px;
-    margin-left: 62.3%;
-    margin-right: 10px;
-    width: calc(37.7% - 10px);
-  }
-  .WordListItem > .layoutFlow > .flowRow > .elText3 > * { 
-    width: 100%;
-  }
-  
-  .flowRow_WordListItem_elText3_91978 { 
   }
   
 }
@@ -685,8 +726,8 @@
     position: relative;
     margin-top: 0px;
     margin-left: 2.0%;
-    margin-right: 12.4%;
-    width: calc(85.6% - 0px);
+    margin-right: 22.4%;
+    width: calc(75.6% - 0px);
   }
   .QualifierList > .layoutFlow > .state0_elTextCopy18953607 > * { 
     width: 100%;
@@ -698,8 +739,8 @@
     position: absolute;
     margin-top: 17px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state0_elText801408 > * { 
     width: 100%;
@@ -713,9 +754,9 @@
   .QualifierList > .layoutFlow > .state0_elFieldCopy599970 {
     position: relative;
     margin-top: 10px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state0_elFieldCopy599970 > * { 
     width: 100%;
@@ -741,8 +782,8 @@
     position: absolute;
     margin-top: 4px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state0_elTextCopy52597 > * { 
     width: 100%;
@@ -756,9 +797,9 @@
   .QualifierList > .layoutFlow > .state0_elField962979 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state0_elField962979 > * { 
     width: 100%;
@@ -784,8 +825,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state0_elTextCopy2252438 > * { 
     width: 100%;
@@ -799,9 +840,9 @@
   .QualifierList > .layoutFlow > .state0_elFieldCopy2539160 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state0_elFieldCopy2539160 > * { 
     width: 100%;
@@ -827,8 +868,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state0_elTextCopy3288884 > * { 
     width: 100%;
@@ -842,9 +883,9 @@
   .QualifierList > .layoutFlow > .state0_elFieldCopy3422729 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state0_elFieldCopy3422729 > * { 
     width: 100%;
@@ -870,8 +911,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state0_elTextCopy4418839 > * { 
     width: 100%;
@@ -885,9 +926,9 @@
   .QualifierList > .layoutFlow > .state0_elFieldCopy4368127 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state0_elFieldCopy4368127 > * { 
     width: 100%;
@@ -913,8 +954,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state0_elTextCopy5744557 > * { 
     width: 100%;
@@ -928,9 +969,9 @@
   .QualifierList > .layoutFlow > .state0_elFieldCopy529868 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state0_elFieldCopy529868 > * { 
     width: 100%;
@@ -956,8 +997,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state0_elTextCopy6873741 > * { 
     width: 100%;
@@ -971,9 +1012,9 @@
   .QualifierList > .layoutFlow > .state0_elFieldCopy6813930 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state0_elFieldCopy6813930 > * { 
     width: 100%;
@@ -999,8 +1040,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state0_elTextCopy7485125 > * { 
     width: 100%;
@@ -1025,12 +1066,12 @@
   .QualifierList > .layoutFlow > .flowRow > .state0_elIconButton363158 {
     position: absolute;
     top: 4px;
-    width: 25px;
-    margin-left: calc(90.7% + 4px);
+    width: 26px;
+    margin-left: calc(80.7% + 4px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state0_elIconButton363158 > * { 
-  width: 25px;
-  height: 25px;
+  width: 26px;
+  height: 26px;
   }
   
 
@@ -1038,9 +1079,9 @@
   .QualifierList > .layoutFlow > .state0_elFieldCopy71022150 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state0_elFieldCopy71022150 > * { 
     width: 100%;
@@ -1066,8 +1107,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state0_elTextCopy8959482 > * { 
     width: 100%;
@@ -1081,9 +1122,9 @@
   .QualifierList > .layoutFlow > .state0_elFieldCopy8897518 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state0_elFieldCopy8897518 > * { 
     width: 100%;
@@ -1109,8 +1150,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state0_elTextCopy9995526 > * { 
     width: 100%;
@@ -1124,9 +1165,9 @@
   .QualifierList > .layoutFlow > .state0_elFieldCopy9130239 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state0_elFieldCopy9130239 > * { 
     width: 100%;
@@ -1152,8 +1193,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state0_elTextCopy10398832 > * { 
     width: 100%;
@@ -1167,9 +1208,9 @@
   .QualifierList > .layoutFlow > .state0_elFieldCopy10374562 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state0_elFieldCopy10374562 > * { 
     width: 100%;
@@ -1195,8 +1236,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state0_elTextCopy11259967 > * { 
     width: 100%;
@@ -1210,9 +1251,9 @@
   .QualifierList > .layoutFlow > .state0_elFieldCopy111016408 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state0_elFieldCopy111016408 > * { 
     width: 100%;
@@ -1238,8 +1279,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state0_elTextCopy12235447 > * { 
     width: 100%;
@@ -1265,7 +1306,7 @@
     position: absolute;
     top: 4px;
     width: 25px;
-    margin-left: calc(90.7% + 4px);
+    margin-left: calc(80.7% + 4px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state0_elIconButtonCopy731404 > * { 
   width: 25px;
@@ -1277,9 +1318,9 @@
   .QualifierList > .layoutFlow > .state0_elFieldCopy12780023 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state0_elFieldCopy12780023 > * { 
     width: 100%;
@@ -1305,8 +1346,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state0_elTextCopy13846102 > * { 
     width: 100%;
@@ -1320,9 +1361,9 @@
   .QualifierList > .layoutFlow > .state0_elFieldCopy13624166 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state0_elFieldCopy13624166 > * { 
     width: 100%;
@@ -1348,8 +1389,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state0_elTextCopy19610471 > * { 
     width: 100%;
@@ -1363,9 +1404,9 @@
   .QualifierList > .layoutFlow > .state0_elFieldCopy1898011 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state0_elFieldCopy1898011 > * { 
     width: 100%;
@@ -1391,8 +1432,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state0_elTextCopy14739580 > * { 
     width: 100%;
@@ -1406,9 +1447,9 @@
   .QualifierList > .layoutFlow > .state0_elFieldCopy14923486 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state0_elFieldCopy14923486 > * { 
     width: 100%;
@@ -1434,8 +1475,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state0_elTextCopy15792466 > * { 
     width: 100%;
@@ -1449,9 +1490,9 @@
   .QualifierList > .layoutFlow > .state0_elFieldCopy15161546 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state0_elFieldCopy15161546 > * { 
     width: 100%;
@@ -1477,8 +1518,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state0_elTextCopy16585003 > * { 
     width: 100%;
@@ -1492,9 +1533,9 @@
   .QualifierList > .layoutFlow > .state0_elFieldCopy16499087 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state0_elFieldCopy16499087 > * { 
     width: 100%;
@@ -1520,8 +1561,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state0_elTextCopy17422400 > * { 
     width: 100%;
@@ -1535,9 +1576,9 @@
   .QualifierList > .layoutFlow > .state0_elFieldCopy17965377 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state0_elFieldCopy17965377 > * { 
     width: 100%;
@@ -1580,7 +1621,7 @@
   .QualifierList > .layoutFlow > .flowRow > .state0_elButton977203 > * { 
   margin-left: auto;
   width: 70px;
-  margin-right: 51.6%;
+  margin-right: 55.6%;
   height: 35px;
   }
   
@@ -1606,7 +1647,7 @@
     position: relative;
     margin-top: 20px;
     width: 70px;
-    margin-left: calc(50.0% + 10px);
+    margin-left: calc(46.0% + 10px);
   }
   .QualifierList > .layoutFlow > .state0_elButtonCopy824148 > * { 
   width: 70px;
@@ -1632,8 +1673,8 @@
     position: relative;
     margin-top: 0px;
     margin-left: 2.0%;
-    margin-right: 9.3%;
-    width: calc(88.7% - 0px);
+    margin-right: 19.3%;
+    width: calc(78.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state0_elLine219922 > * { 
     width: 100%;
@@ -1665,8 +1706,8 @@
     position: relative;
     margin-top: 0px;
     margin-left: 2.0%;
-    margin-right: 12.4%;
-    width: calc(85.6% - 0px);
+    margin-right: 22.4%;
+    width: calc(75.6% - 0px);
   }
   .QualifierList > .layoutFlow > .state1_elTextCopy18953607 > * { 
     width: 100%;
@@ -1678,8 +1719,8 @@
     position: absolute;
     margin-top: 17px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state1_elText801408 > * { 
     width: 100%;
@@ -1693,9 +1734,9 @@
   .QualifierList > .layoutFlow > .state1_elFieldCopy599970 {
     position: relative;
     margin-top: 10px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state1_elFieldCopy599970 > * { 
     width: 100%;
@@ -1721,8 +1762,8 @@
     position: absolute;
     margin-top: 4px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state1_elTextCopy52597 > * { 
     width: 100%;
@@ -1736,9 +1777,9 @@
   .QualifierList > .layoutFlow > .state1_elField962979 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state1_elField962979 > * { 
     width: 100%;
@@ -1764,8 +1805,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state1_elTextCopy2252438 > * { 
     width: 100%;
@@ -1779,9 +1820,9 @@
   .QualifierList > .layoutFlow > .state1_elFieldCopy2539160 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state1_elFieldCopy2539160 > * { 
     width: 100%;
@@ -1807,8 +1848,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state1_elTextCopy3288884 > * { 
     width: 100%;
@@ -1822,9 +1863,9 @@
   .QualifierList > .layoutFlow > .state1_elFieldCopy3422729 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state1_elFieldCopy3422729 > * { 
     width: 100%;
@@ -1850,8 +1891,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state1_elTextCopy4418839 > * { 
     width: 100%;
@@ -1865,9 +1906,9 @@
   .QualifierList > .layoutFlow > .state1_elFieldCopy4368127 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state1_elFieldCopy4368127 > * { 
     width: 100%;
@@ -1893,8 +1934,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state1_elTextCopy5744557 > * { 
     width: 100%;
@@ -1908,9 +1949,9 @@
   .QualifierList > .layoutFlow > .state1_elFieldCopy529868 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state1_elFieldCopy529868 > * { 
     width: 100%;
@@ -1936,8 +1977,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state1_elTextCopy6873741 > * { 
     width: 100%;
@@ -1951,9 +1992,9 @@
   .QualifierList > .layoutFlow > .state1_elFieldCopy6813930 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state1_elFieldCopy6813930 > * { 
     width: 100%;
@@ -1979,8 +2020,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state1_elTextCopy7485125 > * { 
     width: 100%;
@@ -2005,12 +2046,12 @@
   .QualifierList > .layoutFlow > .flowRow > .state1_elIconButton363158 {
     position: absolute;
     top: 4px;
-    width: 25px;
-    margin-left: calc(90.7% + 4px);
+    width: 26px;
+    margin-left: calc(80.7% + 4px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state1_elIconButton363158 > * { 
-  width: 25px;
-  height: 25px;
+  width: 26px;
+  height: 26px;
   }
   
 
@@ -2018,9 +2059,9 @@
   .QualifierList > .layoutFlow > .state1_elFieldCopy71022150 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state1_elFieldCopy71022150 > * { 
     width: 100%;
@@ -2046,8 +2087,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state1_elTextCopy8959482 > * { 
     width: 100%;
@@ -2061,9 +2102,9 @@
   .QualifierList > .layoutFlow > .state1_elFieldCopy8897518 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state1_elFieldCopy8897518 > * { 
     width: 100%;
@@ -2089,8 +2130,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state1_elTextCopy9995526 > * { 
     width: 100%;
@@ -2104,9 +2145,9 @@
   .QualifierList > .layoutFlow > .state1_elFieldCopy9130239 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state1_elFieldCopy9130239 > * { 
     width: 100%;
@@ -2132,8 +2173,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state1_elTextCopy10398832 > * { 
     width: 100%;
@@ -2147,9 +2188,9 @@
   .QualifierList > .layoutFlow > .state1_elFieldCopy10374562 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state1_elFieldCopy10374562 > * { 
     width: 100%;
@@ -2175,8 +2216,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state1_elTextCopy11259967 > * { 
     width: 100%;
@@ -2190,9 +2231,9 @@
   .QualifierList > .layoutFlow > .state1_elFieldCopy111016408 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state1_elFieldCopy111016408 > * { 
     width: 100%;
@@ -2218,8 +2259,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state1_elTextCopy12235447 > * { 
     width: 100%;
@@ -2245,7 +2286,7 @@
     position: absolute;
     top: 4px;
     width: 25px;
-    margin-left: calc(90.7% + 4px);
+    margin-left: calc(80.7% + 4px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state1_elIconButtonCopy731404 > * { 
   width: 25px;
@@ -2257,9 +2298,9 @@
   .QualifierList > .layoutFlow > .state1_elFieldCopy12780023 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state1_elFieldCopy12780023 > * { 
     width: 100%;
@@ -2285,8 +2326,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state1_elTextCopy13846102 > * { 
     width: 100%;
@@ -2300,9 +2341,9 @@
   .QualifierList > .layoutFlow > .state1_elFieldCopy13624166 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state1_elFieldCopy13624166 > * { 
     width: 100%;
@@ -2328,8 +2369,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state1_elTextCopy19610471 > * { 
     width: 100%;
@@ -2343,9 +2384,9 @@
   .QualifierList > .layoutFlow > .state1_elFieldCopy1898011 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state1_elFieldCopy1898011 > * { 
     width: 100%;
@@ -2371,8 +2412,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state1_elTextCopy14739580 > * { 
     width: 100%;
@@ -2386,9 +2427,9 @@
   .QualifierList > .layoutFlow > .state1_elFieldCopy14923486 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state1_elFieldCopy14923486 > * { 
     width: 100%;
@@ -2414,8 +2455,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state1_elTextCopy15792466 > * { 
     width: 100%;
@@ -2429,9 +2470,9 @@
   .QualifierList > .layoutFlow > .state1_elFieldCopy15161546 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state1_elFieldCopy15161546 > * { 
     width: 100%;
@@ -2457,8 +2498,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state1_elTextCopy16585003 > * { 
     width: 100%;
@@ -2472,9 +2513,9 @@
   .QualifierList > .layoutFlow > .state1_elFieldCopy16499087 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state1_elFieldCopy16499087 > * { 
     width: 100%;
@@ -2500,8 +2541,8 @@
     position: absolute;
     margin-top: 7px;
     margin-left: 2.0%;
-    margin-right: 50.0%;
-    width: calc(48.0% - 0px);
+    margin-right: 54.5%;
+    width: calc(43.5% - 0px);
   }
   .QualifierList > .layoutFlow > .flowRow > .state1_elTextCopy17422400 > * { 
     width: 100%;
@@ -2515,9 +2556,9 @@
   .QualifierList > .layoutFlow > .state1_elFieldCopy17965377 {
     position: relative;
     margin-top: 0px;
-    margin-left: 50.0%;
-    margin-right: 9.3%;
-    width: calc(40.7% - 0px);
+    margin-left: 46.0%;
+    margin-right: 19.3%;
+    width: calc(34.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state1_elFieldCopy17965377 > * { 
     width: 100%;
@@ -2560,7 +2601,7 @@
   .QualifierList > .layoutFlow > .flowRow > .state1_elButton977203 > * { 
   margin-left: auto;
   width: 70px;
-  margin-right: 51.6%;
+  margin-right: 55.6%;
   height: 35px;
   }
   
@@ -2586,7 +2627,7 @@
     position: relative;
     margin-top: 20px;
     width: 70px;
-    margin-left: calc(50.0% + 10px);
+    margin-left: calc(46.0% + 10px);
   }
   .QualifierList > .layoutFlow > .state1_elButtonCopy824148 > * { 
   width: 70px;
@@ -2612,8 +2653,8 @@
     position: relative;
     margin-top: 0px;
     margin-left: 2.0%;
-    margin-right: 9.3%;
-    width: calc(88.7% - 0px);
+    margin-right: 19.3%;
+    width: calc(78.7% - 0px);
   }
   .QualifierList > .layoutFlow > .state1_elLine219922 > * { 
     width: 100%;
@@ -3228,6 +3269,55 @@
   
 }
 
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state0_elText2930461 {
+    position: relative;
+    margin-top: 0px;
+    width: 238px;
+    margin-left: 0px;
+  }
+  .Arena > .layoutFlow > .state0_elText2930461 > * { 
+  width: 238px;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state0_elText2930461 {
+    position: relative;
+    margin-top: 0px;
+    width: 238px;
+    margin-left: 0px;
+  }
+  .Arena > .layoutFlow > .state0_elText2930461 > * { 
+  width: 238px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state0_elText2930461 {
+    position: relative;
+    margin-top: 0px;
+    width: 236px;
+    margin-left: 0px;
+  }
+  .Arena > .layoutFlow > .state0_elText2930461 > * { 
+  width: 236px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state0_elText2930461 {
+    position: relative;
+    margin-top: 0px;
+    width: 236px;
+    margin-left: 0px;
+  }
+  .Arena > .layoutFlow > .state0_elText2930461 > * { 
+  width: 236px;
+  }
+  
+}
+
 .Arena .state0_elList463682 li {
   margin-bottom: 20px;
 }
@@ -3518,6 +3608,55 @@
   }
   .Arena > .layoutFlow > .state1_elProgress476510 > * { 
   width: 47px;
+  }
+  
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state1_elText2930461 {
+    position: relative;
+    margin-top: 0px;
+    width: 238px;
+    margin-left: 0px;
+  }
+  .Arena > .layoutFlow > .state1_elText2930461 > * { 
+  width: 238px;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state1_elText2930461 {
+    position: relative;
+    margin-top: 0px;
+    width: 238px;
+    margin-left: 0px;
+  }
+  .Arena > .layoutFlow > .state1_elText2930461 > * { 
+  width: 238px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state1_elText2930461 {
+    position: relative;
+    margin-top: 0px;
+    width: 236px;
+    margin-left: 0px;
+  }
+  .Arena > .layoutFlow > .state1_elText2930461 > * { 
+  width: 236px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state1_elText2930461 {
+    position: relative;
+    margin-top: 0px;
+    width: 236px;
+    margin-left: 0px;
+  }
+  .Arena > .layoutFlow > .state1_elText2930461 > * { 
+  width: 236px;
   }
   
 }
@@ -3897,6 +4036,55 @@
   
 }
 
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state2_elText2930461 {
+    position: relative;
+    margin-top: 0px;
+    width: 238px;
+    margin-left: 0px;
+  }
+  .Arena > .layoutFlow > .state2_elText2930461 > * { 
+  width: 238px;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state2_elText2930461 {
+    position: relative;
+    margin-top: 0px;
+    width: 238px;
+    margin-left: 0px;
+  }
+  .Arena > .layoutFlow > .state2_elText2930461 > * { 
+  width: 238px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state2_elText2930461 {
+    position: relative;
+    margin-top: 0px;
+    width: 236px;
+    margin-left: 0px;
+  }
+  .Arena > .layoutFlow > .state2_elText2930461 > * { 
+  width: 236px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state2_elText2930461 {
+    position: relative;
+    margin-top: 0px;
+    width: 236px;
+    margin-left: 0px;
+  }
+  .Arena > .layoutFlow > .state2_elText2930461 > * { 
+  width: 236px;
+  }
+  
+}
+
 /* Narrowest size for component's responsive layout */
   .Arena {
   }
@@ -4129,6 +4317,55 @@
   }
   .Arena > .layoutFlow > .state3_elProgress476510 > * { 
   width: 47px;
+  }
+  
+}
+
+
+/* Narrowest size for this element's responsive layout */
+  .Arena > .layoutFlow > .state3_elText2930461 {
+    position: relative;
+    margin-top: 0px;
+    width: 238px;
+    margin-left: 0px;
+  }
+  .Arena > .layoutFlow > .state3_elText2930461 > * { 
+  width: 238px;
+  }
+  
+@media (min-width: 568px) {
+  .Arena > .layoutFlow > .state3_elText2930461 {
+    position: relative;
+    margin-top: 0px;
+    width: 238px;
+    margin-left: 0px;
+  }
+  .Arena > .layoutFlow > .state3_elText2930461 > * { 
+  width: 238px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .Arena > .layoutFlow > .state3_elText2930461 {
+    position: relative;
+    margin-top: 0px;
+    width: 236px;
+    margin-left: 0px;
+  }
+  .Arena > .layoutFlow > .state3_elText2930461 > * { 
+  width: 236px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .Arena > .layoutFlow > .state3_elText2930461 {
+    position: relative;
+    margin-top: 0px;
+    width: 236px;
+    margin-left: 0px;
+  }
+  .Arena > .layoutFlow > .state3_elText2930461 > * { 
+  width: 236px;
   }
   
 }
@@ -4415,7 +4652,7 @@
   }
 
   .StartScreen > .layoutFlow > .elColumns > div > .col0 {
-    flex: 20.0;  /* Base weight for this column */
+    flex: 0.0;  /* Base weight for this column */
     position: relative;
   }
 
@@ -4457,7 +4694,7 @@
 
 @media (max-width: 567px) {
   .StartScreen > .layoutFlow > .elColumns > div > .col0 {
-    flex: 20.0;  /* Column width for this screen format */
+    flex: 0.0;  /* Column width for this screen format */
     flex-basis: 567px;
     margin-left: 0.0px;
     margin-top: 0.0px;
@@ -4468,7 +4705,7 @@
 }
 
   .StartScreen > .layoutFlow > .elColumns > div > .col1 {
-    flex: 80.0;  /* Base weight for this column */
+    flex: 100.0;  /* Base weight for this column */
     position: relative;
   }
 
@@ -4510,7 +4747,7 @@
 
 @media (max-width: 567px) {
   .StartScreen > .layoutFlow > .elColumns > div > .col1 {
-    flex: 80.0;  /* Column width for this screen format */
+    flex: 100.0;  /* Column width for this screen format */
     flex-basis: 567px;
     margin-left: 0.0px;
     margin-top: 0.0px;

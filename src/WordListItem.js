@@ -12,8 +12,8 @@ export default class WordListItem extends Component {
     super(props);
     
     this.state = {
-      elList_visible: false,
       elText3_visible: false,
+      elList_visible: false,
     };
   }
 
@@ -83,6 +83,40 @@ export default class WordListItem extends Component {
     const style_elRating = {
       pointerEvents: 'auto',
      };
+    let transformPropValue_text3 = (input) => {
+      // This function modifies the value for property 'text'.
+      // There is a variable named 'input' that provides the property value.
+      //
+      //return input;
+      let tags = input;
+      //["v","pron:D IH0 S EH1 M B AH0 L ","ipa_pron:dɪsˈɛmbʌɫ","f:0.313887"]
+      let ipa_pron = "";
+      if (tags) {
+        for (let tag of tags) {
+          if (tag.startsWith("ipa_pron:")) {
+            ipa_pron = tag.split(":")[1];
+            break;
+          }
+        }
+      }
+      return ipa_pron;
+    }
+    
+    const value_text3 = transformPropValue_text3(this.props.tags);
+    
+    const style_elText3 = {
+      fontSize: 16.1,
+      color: 'rgba(0, 0, 0, 0.8500)',
+      textAlign: 'left',
+     };
+    const elText3 = this.state.elText3_visible ? (
+      <div className="elText3">
+        <div className="systemFontRegular" style={style_elText3}>
+          <div>{value_text3 !== undefined ? value_text3 : (<span className="propValueMissing">{this.props.locStrings.wordlistitem_text3_91978}</span>)}</div>
+        </div>
+      </div>
+      
+     ) : null;
     let transformPropValue_list = (input) => {
       // This function modifies the value for property 'itemsArray'.
       // There is a variable named 'input' that provides the property value.
@@ -124,47 +158,13 @@ export default class WordListItem extends Component {
           {items_list.map((row, index) => {
             let itemComp = (row._componentId)
                 ? listComps_list[row._componentId]
-                : <MeaningListItem appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} {...{'item': row['item'], }} ref={(el) => {if (el) this._elList_items.push(el)}} />;
+                : <MeaningListItem appActions={this.props.appActions} deviceInfo={this.props.deviceInfo} locStrings={this.props.locStrings} ref={(el) => {if (el) this._elList_items.push(el)}} />;
             return (<li key={row.key}>
                 {itemComp}
               </li>);
           })}
           <div className="marker" ref={(el)=> this._elList_endMarker = el} />
         </ul>
-      </div>
-      
-     ) : null;
-    let transformPropValue_text3 = (input) => {
-      // This function modifies the value for property 'text'.
-      // There is a variable named 'input' that provides the property value.
-      //
-      //return input;
-      let tags = input;
-      //["v","pron:D IH0 S EH1 M B AH0 L ","ipa_pron:dɪsˈɛmbʌɫ","f:0.313887"]
-      let ipa_pron = "";
-      if (tags) {
-        for (let tag of tags) {
-          if (tag.startsWith("ipa_pron:")) {
-            ipa_pron = tag.split(":")[1];
-            break;
-          }
-        }
-      }
-      return ipa_pron;
-    }
-    
-    const value_text3 = transformPropValue_text3(this.props.tags);
-    
-    const style_elText3 = {
-      fontSize: 16.1,
-      color: 'rgba(0, 0, 0, 0.8500)',
-      textAlign: 'right',
-     };
-    const elText3 = this.state.elText3_visible ? (
-      <div className="elText3">
-        <div className="systemFontRegular" style={style_elText3}>
-          <div>{value_text3 !== undefined ? value_text3 : (<span className="propValueMissing">{this.props.locStrings.wordlistitem_text3_91978}</span>)}</div>
-        </div>
       </div>
       
      ) : null;
@@ -192,10 +192,12 @@ export default class WordListItem extends Component {
             </div>
           </div>
           
-          { elList }
-          <div className="flowRow flowRow_WordListItem_elText3_91978">
           { elText3 }
+          <div className="elSpacer">
+            <div />
           </div>
+          
+          { elList }
         </div>
         
       </div>

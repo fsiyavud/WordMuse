@@ -56,11 +56,24 @@ export default class StartScreen extends Component {
       // This function modifies the value for property 'componentStateId'.
       // There is a variable named 'input' that provides the property value.
       //
+      let str = "";
+      if (this.props.deviceInfo.screenFormatId) {
+        str = this.props.deviceInfo.screenFormatId.valueOf();
+        if (str) {
+          str = str.trim();
+        }
+        if (str !== "narrow-phone") {
+          return 1;
+        }
+      }
+      return 0;
+      /*
       var scr = String(this.props.deviceInfo.screenFormatId).valueOf().trim();
       if (scr !== "narrow-phone" && scr !== "undefined") {
         return 1;
       }
       return 0;
+      */
     }
     let transformStateValue_elColumns_col1 = (input) => {
       // This function modifies the value for property 'componentStateId'.

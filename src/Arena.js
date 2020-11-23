@@ -140,6 +140,26 @@ export default class Arena extends Component {
     if (this.props.appActions.isLoading()) 
       cssClass_progress += ' circularProgressIndicator-active';
     
+    let transformPropValue_text2 = (input) => {
+      // This function modifies the value for property 'text'.
+      // There is a variable named 'input' that provides the property value.
+      //
+      let str = "";
+      if (this.props.deviceInfo.screenFormatId) {
+        str = this.props.deviceInfo.screenFormatId.valueOf();
+        if (str) {
+          str = str.trim();
+        }
+      }
+      return "LeftMenuDriver: " + input + " Orientation: " + str;
+    }
+    
+    const value_text2 = transformPropValue_text2((this.props.appActions.dataSlots ? this.props.appActions.dataSlots['ds_leftmenu_driver'] : ''));
+    
+    const style_state0_elText2930461 = {
+      color: 'rgba(0, 0, 0, 0.8500)',
+      textAlign: 'left',
+     };
     
     // Source items and any special components used for list/grid element 'list'.
     let items_list = [];
@@ -197,6 +217,12 @@ export default class Arena extends Component {
               <svg className={cssClass_progress}>
                 <circle className="circularProgress-animatedPath" style={{stroke: '#0093d5'}} cx="25" cy="25" r="17" fill="none" strokeWidth="3" strokeMiterlimit="10" />
               </svg>
+            </div>
+          </div>
+          
+          <div className="state0_elText2930461">
+            <div className="baseFont" style={style_state0_elText2930461}>
+              <div>{value_text2 !== undefined ? value_text2 : (<span className="propValueMissing">{this.props.locStrings.arena_text2_930461}</span>)}</div>
             </div>
           </div>
           
@@ -312,6 +338,26 @@ export default class Arena extends Component {
     if (this.props.appActions.isLoading()) 
       cssClass_progress += ' circularProgressIndicator-active';
     
+    let transformPropValue_text2 = (input) => {
+      // This function modifies the value for property 'text'.
+      // There is a variable named 'input' that provides the property value.
+      //
+      let str = "";
+      if (this.props.deviceInfo.screenFormatId) {
+        str = this.props.deviceInfo.screenFormatId.valueOf();
+        if (str) {
+          str = str.trim();
+        }
+      }
+      return "LeftMenuDriver: " + input + " Orientation: " + str;
+    }
+    
+    const value_text2 = transformPropValue_text2((this.props.appActions.dataSlots ? this.props.appActions.dataSlots['ds_leftmenu_driver'] : ''));
+    
+    const style_state1_elText2930461 = {
+      color: 'rgba(0, 0, 0, 0.8500)',
+      textAlign: 'left',
+     };
     
     // Source items and any special components used for list/grid element 'list'.
     let items_list = [];
@@ -361,6 +407,12 @@ export default class Arena extends Component {
               <svg className={cssClass_progress}>
                 <circle className="circularProgress-animatedPath" style={{stroke: '#0093d5'}} cx="25" cy="25" r="17" fill="none" strokeWidth="3" strokeMiterlimit="10" />
               </svg>
+            </div>
+          </div>
+          
+          <div className="state1_elText2930461">
+            <div className="baseFont" style={style_state1_elText2930461}>
+              <div>{value_text2 !== undefined ? value_text2 : (<span className="propValueMissing">{this.props.locStrings.arena_text2_930461}</span>)}</div>
             </div>
           </div>
           
@@ -491,6 +543,26 @@ export default class Arena extends Component {
     if (this.props.appActions.isLoading()) 
       cssClass_progress += ' circularProgressIndicator-active';
     
+    let transformPropValue_text2 = (input) => {
+      // This function modifies the value for property 'text'.
+      // There is a variable named 'input' that provides the property value.
+      //
+      let str = "";
+      if (this.props.deviceInfo.screenFormatId) {
+        str = this.props.deviceInfo.screenFormatId.valueOf();
+        if (str) {
+          str = str.trim();
+        }
+      }
+      return "LeftMenuDriver: " + input + " Orientation: " + str;
+    }
+    
+    const value_text2 = transformPropValue_text2((this.props.appActions.dataSlots ? this.props.appActions.dataSlots['ds_leftmenu_driver'] : ''));
+    
+    const style_state2_elText2930461 = {
+      color: 'rgba(0, 0, 0, 0.8500)',
+      textAlign: 'left',
+     };
     
     return (
       <div className="Arena appBg">
@@ -524,6 +596,12 @@ export default class Arena extends Component {
               <svg className={cssClass_progress}>
                 <circle className="circularProgress-animatedPath" style={{stroke: '#0093d5'}} cx="25" cy="25" r="17" fill="none" strokeWidth="3" strokeMiterlimit="10" />
               </svg>
+            </div>
+          </div>
+          
+          <div className="state2_elText2930461">
+            <div className="baseFont" style={style_state2_elText2930461}>
+              <div>{value_text2 !== undefined ? value_text2 : (<span className="propValueMissing">{this.props.locStrings.arena_text2_930461}</span>)}</div>
             </div>
           </div>
         </div>
@@ -625,6 +703,26 @@ export default class Arena extends Component {
     if (this.props.appActions.isLoading()) 
       cssClass_progress += ' circularProgressIndicator-active';
     
+    let transformPropValue_text2 = (input) => {
+      // This function modifies the value for property 'text'.
+      // There is a variable named 'input' that provides the property value.
+      //
+      let str = "";
+      if (this.props.deviceInfo.screenFormatId) {
+        str = this.props.deviceInfo.screenFormatId.valueOf();
+        if (str) {
+          str = str.trim();
+        }
+      }
+      return "LeftMenuDriver: " + input + " Orientation: " + str;
+    }
+    
+    const value_text2 = transformPropValue_text2((this.props.appActions.dataSlots ? this.props.appActions.dataSlots['ds_leftmenu_driver'] : ''));
+    
+    const style_state3_elText2930461 = {
+      color: 'rgba(0, 0, 0, 0.8500)',
+      textAlign: 'left',
+     };
     
     return (
       <div className="Arena appBg">
@@ -650,6 +748,12 @@ export default class Arena extends Component {
               <svg className={cssClass_progress}>
                 <circle className="circularProgress-animatedPath" style={{stroke: '#0093d5'}} cx="25" cy="25" r="17" fill="none" strokeWidth="3" strokeMiterlimit="10" />
               </svg>
+            </div>
+          </div>
+          
+          <div className="state3_elText2930461">
+            <div className="baseFont" style={style_state3_elText2930461}>
+              <div>{value_text2 !== undefined ? value_text2 : (<span className="propValueMissing">{this.props.locStrings.arena_text2_930461}</span>)}</div>
             </div>
           </div>
         </div>
