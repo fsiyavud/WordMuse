@@ -505,7 +505,7 @@
   margin-left: auto;
   width: 110px;
   margin-right: 10px;
-  height: 44px;
+  height: 28px;
   }
   
 @media (min-width: 568px) {
@@ -518,7 +518,7 @@
   margin-left: auto;
   width: 110px;
   margin-right: 10px;
-  height: 44px;
+  height: 28px;
   }
   
 }
@@ -532,7 +532,7 @@
   margin-left: auto;
   width: 109px;
   margin-right: 10px;
-  height: 43px;
+  height: 27px;
   }
   
 }
@@ -546,7 +546,7 @@
   margin-left: auto;
   width: 109px;
   margin-right: 10px;
-  height: 43px;
+  height: 27px;
   }
   
 }
@@ -556,24 +556,24 @@
   .WordListItem > .layoutFlow > .elText3 {
     position: relative;
     margin-top: 0px;
-    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
   }
   .WordListItem > .layoutFlow > .elText3 > * { 
-  margin-left: auto;
-  width: 110px;
-  margin-right: 10px;
+    width: 100%;
   }
   
 @media (min-width: 568px) {
   .WordListItem > .layoutFlow > .elText3 {
     position: relative;
     margin-top: 0px;
-    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
   }
   .WordListItem > .layoutFlow > .elText3 > * { 
-  margin-left: auto;
-  width: 110px;
-  margin-right: 10px;
+    width: 100%;
   }
   
 }
@@ -581,12 +581,12 @@
   .WordListItem > .layoutFlow > .elText3 {
     position: relative;
     margin-top: 0px;
-    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
   }
   .WordListItem > .layoutFlow > .elText3 > * { 
-  margin-left: auto;
-  width: 109px;
-  margin-right: 10px;
+    width: 100%;
   }
   
 }
@@ -594,12 +594,12 @@
   .WordListItem > .layoutFlow > .elText3 {
     position: relative;
     margin-top: 0px;
-    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: calc(100.0% - 0px);
   }
   .WordListItem > .layoutFlow > .elText3 > * { 
-  margin-left: auto;
-  width: 109px;
-  margin-right: 10px;
+    width: 100%;
   }
   
 }

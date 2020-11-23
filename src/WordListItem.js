@@ -107,7 +107,7 @@ export default class WordListItem extends Component {
     const style_elText3 = {
       fontSize: 16.1,
       color: 'rgba(0, 0, 0, 0.8500)',
-      textAlign: 'left',
+      textAlign: 'center',
      };
     const elText3 = this.state.elText3_visible ? (
       <div className="elText3">
